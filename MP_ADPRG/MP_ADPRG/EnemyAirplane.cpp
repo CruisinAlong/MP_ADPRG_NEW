@@ -48,8 +48,7 @@ void EnemyAirplane::onActivate() {
 
 	PhysicsManager::getInstance()->trackObject(this->collider);
 
-	this->setPosition(Game::WINDOW_WIDTH - static_cast<int>(sprite->getTexture()->getSize().x) / 2, Game::WINDOW_HEIGHT / 2 - static_cast<int>(sprite->getTexture()->getSize().y) / 2);
-	this->getTransformable()->move(rand() % SPAWN_RANGE - rand() % SPAWN_RANGE, 50);
+	this->setPosition(Game::WINDOW_WIDTH + static_cast<int>(sprite->getTexture()->getSize().x) / 2, Game::WINDOW_HEIGHT / 2 - static_cast<int>(sprite->getTexture()->getSize().y) / 2);
 }
 AbstractPoolable* EnemyAirplane::clone() {
 	AbstractPoolable* copyObj = new EnemyAirplane(this->name);

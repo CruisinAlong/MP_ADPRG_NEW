@@ -4,7 +4,7 @@
 #include "EnemyGroundUnit.h"
 #include <iostream>
 
-EnemyGroundSwarmHandler::EnemyGroundSwarmHandler(int numEnemies, std::string name, AbstractGameObject* parent) : AbstractComponent(name, Script) {
+EnemyGroundSwarmHandler::EnemyGroundSwarmHandler(int numEnemies, std::string name, AbstractGameObject* parent) : AbstractComponent(name, Script), distribution(1.0f, 5.0f) {
     this->enemyPool = new GameObjectPool(
         ObjectPoolHolder::GROUND_POOL_TAG,
         new EnemyGroundUnit("enemyGroundUnit"),
@@ -14,6 +14,8 @@ EnemyGroundSwarmHandler::EnemyGroundSwarmHandler(int numEnemies, std::string nam
     enemyPool->initialize();
     ObjectPoolHolder::getInstance()->registerObjectPool(enemyPool);
     std::cout << "EnemyGroundSwarmHandler [" << name << "] initialized with " << numEnemies << " enemies." << std::endl;
+
+    nextSpawnTime = distribution(generator); 
 }
 
 EnemyGroundSwarmHandler::~EnemyGroundSwarmHandler() {
@@ -25,10 +27,11 @@ void EnemyGroundSwarmHandler::perform() {
     GameObjectPool* enemyGroundPool = ObjectPoolHolder::getInstance()->getPool(ObjectPoolHolder::GROUND_POOL_TAG);
     this->ticks += this->deltaTime.asSeconds();
 
-    if (this->ticks > SPAWN_INTERVAL) {
+    if (this->ticks > nextSpawnTime) {
         this->ticks = 0.0f;
         enemyGroundPool->requestPoolable();
 
+        nextSpawnTime = distribution(generator); 
     }
 
     std::vector<AbstractPoolable*> toRelease;

@@ -4,7 +4,7 @@
 #include "EnemyAirplane.h"
 #include <iostream>
 
-EnemySwarmHandler::EnemySwarmHandler(int numEnemies, std::string name, AbstractGameObject* parent) : AbstractComponent(name, Script) {
+EnemySwarmHandler::EnemySwarmHandler(int numEnemies, std::string name, AbstractGameObject* parent) : AbstractComponent(name, Script), distribution(1.0f, 5.0f) {
     this->enemyPool = new GameObjectPool(
         ObjectPoolHolder::ENEMY_POOL_TAG,
         new EnemyAirplane("enemy"),
@@ -14,6 +14,8 @@ EnemySwarmHandler::EnemySwarmHandler(int numEnemies, std::string name, AbstractG
     enemyPool->initialize();
     ObjectPoolHolder::getInstance()->registerObjectPool(enemyPool);
     std::cout << "EnemySwarmHandler [" << name << "] initialized with " << numEnemies << " enemies." << std::endl;
+
+    nextSpawnTime = distribution(generator);
 }
 
 EnemySwarmHandler::~EnemySwarmHandler() {
@@ -28,6 +30,7 @@ void EnemySwarmHandler::perform() {
     if (this->ticks > SPAWN_INTERVAL) {
         this->ticks = 0.0f;
         enemyPool->requestPoolable();
+        nextSpawnTime = distribution(generator);
     }
 
     std::vector<AbstractPoolable*> toRelease;

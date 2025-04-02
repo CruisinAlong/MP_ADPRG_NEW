@@ -2,6 +2,7 @@
 #include "BallScene.h"
 #include "BallScreen.h"
 #include "GameObjectManager.h"
+#include "SceneManager.h"
 #include <iostream>
 
 BallScene::BallScene() : AbstractScene("BallScene") {

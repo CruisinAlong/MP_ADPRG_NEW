@@ -1,6 +1,7 @@
 // BallScreen.h
 #pragma once
-
+#include "BGObject.h"
+#include "AirplanePlayer.h"
 #include "AbstractGameObject.h"
 #include "ButtonListener.h"
 

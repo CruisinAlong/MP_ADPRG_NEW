@@ -4,6 +4,7 @@
 #include "GameObjectPool.h"
 #include "ObjectPoolHolder.h"
 #include "EnemyGroundUnit.h"
+#include <random>
 
 class EnemyGroundSwarmHandler : public AbstractComponent {
 public:
@@ -14,6 +15,9 @@ public:
 
 private:
     GameObjectPool* enemyPool;
-    const float SPAWN_INTERVAL = 0.01f;
+    const float SPAWN_INTERVAL = 2.0f; 
+    float nextSpawnTime = 0.0f;
     float ticks = 0.0f;
+    std::default_random_engine generator;
+    std::uniform_real_distribution<float> distribution;
 };
