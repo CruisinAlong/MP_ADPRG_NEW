@@ -17,6 +17,7 @@ public:
 	void perform() override;
 	
 	static Renderer* createSprite(std::string name, std::string resourceName);
+	virtual sf::Sprite* getSprite() { return nullptr; }
 
 private:
 	sf::RenderWindow* targetWindow;

@@ -35,7 +35,6 @@ void EnemySwarmHandler::perform() {
         sf::Vector2f position = enemy->getPosition();
         if (position.x < 0) {
             toRelease.push_back(enemy);
-            std::cout << "EnemySwarmHandler [" << name << "] releasing enemy at position: (" << position.x << ", " << position.y << ")" << std::endl;
         }
     }
     for (auto& enemy : toRelease) {

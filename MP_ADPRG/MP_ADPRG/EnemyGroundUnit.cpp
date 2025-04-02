@@ -61,10 +61,7 @@ AbstractPoolable* EnemyGroundUnit::clone() {
 }
 
 void EnemyGroundUnit::onCollisionEnter(AbstractGameObject* contact) {
-    return;
     if (contact->getName().find("PlaneObject") != std::string::npos) {
-        GameObjectPool* enemyPool = ObjectPoolHolder::getInstance()->getPool(ObjectPoolHolder::ENEMY_POOL_TAG);
-        enemyPool->releasePoolable((AbstractPoolable*)this);
 		std::cout << "Ground Unit collided with PlaneObject" << std::endl;
     }
 }

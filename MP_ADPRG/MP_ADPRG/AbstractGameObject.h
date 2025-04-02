@@ -27,6 +27,7 @@ public:
 	std::vector<AbstractComponent*> getComponentsOfTypeRecursive(AbstractComponent::ComponentType type);
 	sf::Transformable* getTransformable();
 	sf::Transform getGlobalTransform(); 
+	sf::RenderWindow* getRenderWindow();
 	void setPosition(float x, float y);
 	void setEnabled(bool flag);
 	bool isEnabled();

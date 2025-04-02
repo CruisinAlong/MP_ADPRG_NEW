@@ -2,6 +2,7 @@
 #include "AbstractComponent.h"
 #include "CollisionListener.h"
 #include "AbstractGameObject.h"
+#include "TextureManager.h"
 #include <unordered_set>
 
 class Collider : public AbstractComponent
@@ -26,6 +27,7 @@ public:
 
 	void perform();
 	void clearCollisions();
+	sf::Sprite& getDebugSprite();
 private:
 
 	bool checked = false;
@@ -33,4 +35,6 @@ private:
 	std::unordered_set<Collider*> collisions;
 	sf::FloatRect localBounds;
 	CollisionListener* listener;
+	sf::RectangleShape debugShape;
+	sf::Sprite debugSprite;
 };

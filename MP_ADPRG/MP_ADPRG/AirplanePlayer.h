@@ -18,6 +18,7 @@ public:
 
 	void onCollisionEnter(AbstractGameObject* contact) override;
 	void onCollisionExit(AbstractGameObject* gameObject) override;
+	
 private:
 	const float SPEED_MULTIPLIER = 300.f;
 	bool moveUp = false;
@@ -26,4 +27,5 @@ private:
 	bool moveRight = false;
 	Collider* collider;
 	float direction = 1.0f;
+	sf::RectangleShape debugShape;
 };

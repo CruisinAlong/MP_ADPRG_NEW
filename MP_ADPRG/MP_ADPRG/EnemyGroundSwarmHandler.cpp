@@ -36,7 +36,6 @@ void EnemyGroundSwarmHandler::perform() {
         sf::Vector2f position = enemy->getPosition();
         if (position.x < 0 || position.x > 800) {
             toRelease.push_back(enemy);
-            std::cout << "EnemyGroundSwarmHandler [" << name << "] releasing enemy at position: (" << position.x << ", " << position.y << ")" << std::endl;
         }
     }
     for (auto& enemy : toRelease) {

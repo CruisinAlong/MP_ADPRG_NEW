@@ -194,3 +194,10 @@ sf::Transform AbstractGameObject::getGlobalTransform() {
     }
     return transform;
 }
+
+sf::RenderWindow* AbstractGameObject::getRenderWindow() {
+    if (mParent) {
+        return mParent->getRenderWindow();
+    }
+    return nullptr;
+}

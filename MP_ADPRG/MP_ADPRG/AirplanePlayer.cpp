@@ -11,7 +11,7 @@ void AirplanePlayer::initialize()
 {
 	std::cout << "AirplanePlayer initialized" << std::endl;
 
-	this->transformable.setPosition(Game::WINDOW_WIDTH / 4, Game::WINDOW_HEIGHT - 50);
+	this->transformable.setPosition(Game::WINDOW_WIDTH / 4, Game::WINDOW_HEIGHT - 20);
 
 	PlayerInputController* inputController = new PlayerInputController("MyPlayerInput");
 	this->attachComponent(inputController);
@@ -22,8 +22,15 @@ void AirplanePlayer::initialize()
 	Renderer* renderer = Renderer::createSprite("PlayerSprite", "eagle");
 	attachComponent(renderer);
 
-	this->collider = new Collider("PlayerCollider");
-	this->collider->setLocalBounds(sprite->getGlobalBounds());
+	sf::Sprite* sprite = renderer->getSprite(); // Retrieve the sprite
+	if (sprite != nullptr) {
+		this->collider = new Collider("PlayerCollider");
+		this->collider->setLocalBounds(sprite->getGlobalBounds());
+		std::cout << "BOUNDS: " << sprite->getGlobalBounds().left << ":" << sprite->getGlobalBounds().top << ":" << sprite->getGlobalBounds().width << ":" << sprite->getGlobalBounds().height << std::endl;
+	}
+	else {
+		std::cerr << "Error: sprite is nullptr" << std::endl;
+	}
 	this->collider->setCollisionListener(this);
 	this->attachComponent(this->collider);
 }
@@ -44,6 +51,7 @@ void AirplanePlayer::onCollisionEnter(AbstractGameObject* contact) {
 		std::cout << "AirplanePlayer collided with EnemyAirplane" << std::endl;
 	}
 }
+
 
 void AirplanePlayer::onCollisionExit(AbstractGameObject* gameObject) {
 	// Handle collision exit if needed

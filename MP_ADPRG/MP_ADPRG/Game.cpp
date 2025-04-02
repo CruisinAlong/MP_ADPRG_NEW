@@ -3,6 +3,7 @@
 #include "Game.h"
 #include "TitleScene.h"
 #include "GameScene.h"
+#include "BallScene.h"
 
 Game::Game() : mWindow(sf::VideoMode(Game::WINDOW_WIDTH, Game::WINDOW_HEIGHT), "SFML Application") {
     std::cout << "Game constructor called" << std::endl;
@@ -14,6 +15,7 @@ Game::Game() : mWindow(sf::VideoMode(Game::WINDOW_WIDTH, Game::WINDOW_HEIGHT), "
     SceneManager::getInstance()->registerScene(new TitleScene());
     SceneManager::getInstance()->registerScene(new MainMenuScene());
     SceneManager::getInstance()->registerScene(new GameScene());
+    SceneManager::getInstance()->registerScene(new BallScene());
     SceneManager::getInstance()->loadScene("TitleScene");
 }
 

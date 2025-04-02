@@ -31,8 +31,6 @@ void EnemyAirplane::initialize() {
 	this->attachComponent(behavior);
 	behavior->configure(EnemyBehavior::SlowForward, 1.0f);
 
-
-
 	this->collider = new Collider("EnemyCollider");
 	this->collider->setLocalBounds(sprite->getGlobalBounds());
 	this->collider->setCollisionListener(this);
@@ -59,11 +57,7 @@ AbstractPoolable* EnemyAirplane::clone() {
 }
 
 void EnemyAirplane::onCollisionEnter(AbstractGameObject* contact) {
-
-	return;
 	if (contact->getName().find("PlaneObject") != std::string::npos) {
-		GameObjectPool* enemyPool = ObjectPoolHolder::getInstance()->getPool(ObjectPoolHolder::ENEMY_POOL_TAG);
-		enemyPool->releasePoolable((AbstractPoolable*)this);
 		std::cout << "EnemyAirplane collided with PlaneObject" << std::endl;
 	}
 }

@@ -40,6 +40,7 @@ void TextureManager::loadAll()
     loadTexture("HUD_bg", "Media/Textures/bar_1.png");
     loadTexture("bullet", "Media/Textures/Bullet.png");
     loadTexture("main_menu_bg", "Media/Textures/TitleScreenBG.png");
+    loadTexture("debug_shape", "Media/Textures/circle.png");
 }
 
 void TextureManager::loadTexture(std::string key, std::string path)

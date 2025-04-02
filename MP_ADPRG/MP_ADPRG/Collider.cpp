@@ -4,7 +4,6 @@
 #include <iostream>
 
 Collider::Collider(std::string name) : AbstractComponent(name, AbstractComponent::Physics) {
-
 }
 
 void Collider::setCollisionListener(CollisionListener* listener) {
@@ -60,4 +59,8 @@ void Collider::clearCollisions() {
 
 void Collider::perform() {
 
+}
+
+sf::Sprite& Collider::getDebugSprite() {
+	return debugSprite;
 }
