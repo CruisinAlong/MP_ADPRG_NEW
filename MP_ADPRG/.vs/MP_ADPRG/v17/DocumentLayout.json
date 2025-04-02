@@ -1,0 +1,825 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\AirplanePlayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\AirplanePlayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\SpriteRenderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\SpriteRenderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\SpriteRenderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\SpriteRenderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemyGroundSwarmHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\EnemyGroundSwarmHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemyGroundUnit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\EnemyGroundUnit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemyGroundUnit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\EnemyGroundUnit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\AirplanePlayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\AirplanePlayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemySwarmHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\EnemySwarmHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\GameScreen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\GameScreen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemyAirplane.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\EnemyAirplane.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\ProjectileObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\ProjectileObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemyInputController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\EnemyInputController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\BGMovement.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\BGMovement.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemyBehavior.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\EnemyBehavior.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\BGObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\BGObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\BGMovement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\BGMovement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemyBehavior.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\EnemyBehavior.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\Documents\\GitHub\\SFML-SCRATCHPROJECT\\SFML_ADPRG_PROJECT\\SFML_ADPRG_PROJECT\\ApplicationManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\UIData.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\UIData.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\UIManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\UIManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\UIManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\UIManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\UIData.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\UIData.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\Renderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\Renderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\AbstractGameObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\AbstractGameObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\GameScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\GameScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\ObjectPoolHolder.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\ObjectPoolHolder.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\ObjectPoolHolder.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\ObjectPoolHolder.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\GameScreen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\GameScreen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemyAirplane.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\EnemyAirplane.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\PlayerMovement.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\PlayerMovement.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\HUD.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\HUD.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\include\\vector||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\PlayerInputController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\PlayerInputController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\GenericInputController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\GenericInputController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\GenericInputController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\GenericInputController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\TextureManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\TextureManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\TextureManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\TextureManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\PlayerMovement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\PlayerMovement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\UIButton.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\UIButton.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\PlayerInputController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\PlayerInputController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\RendererFactory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\RendererFactory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\RendererFactory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\RendererFactory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\AbstractRendererFactory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\AbstractRendererFactory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\AbstractComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{223EF8C5-8A80-40E7-8533-06989A322DD7}|MP_ADPRG\\MP_ADPRG.vcxproj|solutionrelative:MP_ADPRG\\AbstractComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 553,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 33,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SpriteRenderer.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\SpriteRenderer.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\SpriteRenderer.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\SpriteRenderer.cpp",
+              "RelativeToolTip": "MP_ADPRG\\SpriteRenderer.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-24T12:16:16.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AirplanePlayer.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\AirplanePlayer.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\AirplanePlayer.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\AirplanePlayer.cpp",
+              "RelativeToolTip": "MP_ADPRG\\AirplanePlayer.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-15T07:37:49.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Renderer.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\Renderer.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\Renderer.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\Renderer.cpp",
+              "RelativeToolTip": "MP_ADPRG\\Renderer.cpp",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAnwB4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-12T01:34:47.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SpriteRenderer.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\SpriteRenderer.h",
+              "RelativeDocumentMoniker": "MP_ADPRG\\SpriteRenderer.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\SpriteRenderer.h",
+              "RelativeToolTip": "MP_ADPRG\\SpriteRenderer.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-12T12:52:27.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EnemyGroundSwarmHandler.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemyGroundSwarmHandler.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\EnemyGroundSwarmHandler.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemyGroundSwarmHandler.cpp",
+              "RelativeToolTip": "MP_ADPRG\\EnemyGroundSwarmHandler.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-17T02:56:01.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EnemyGroundUnit.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemyGroundUnit.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\EnemyGroundUnit.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemyGroundUnit.cpp",
+              "RelativeToolTip": "MP_ADPRG\\EnemyGroundUnit.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAEAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-18T06:02:15.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EnemyGroundUnit.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemyGroundUnit.h",
+              "RelativeDocumentMoniker": "MP_ADPRG\\EnemyGroundUnit.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemyGroundUnit.h",
+              "RelativeToolTip": "MP_ADPRG\\EnemyGroundUnit.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-18T06:04:20.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AirplanePlayer.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\AirplanePlayer.h",
+              "RelativeDocumentMoniker": "MP_ADPRG\\AirplanePlayer.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\AirplanePlayer.h",
+              "RelativeToolTip": "MP_ADPRG\\AirplanePlayer.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-12T12:49:56.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EnemySwarmHandler.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemySwarmHandler.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\EnemySwarmHandler.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemySwarmHandler.cpp",
+              "RelativeToolTip": "MP_ADPRG\\EnemySwarmHandler.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-15T08:08:55.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GameScreen.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\GameScreen.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\GameScreen.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\GameScreen.cpp",
+              "RelativeToolTip": "MP_ADPRG\\GameScreen.cpp",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAnwBoAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-14T07:14:55.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EnemyAirplane.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemyAirplane.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\EnemyAirplane.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemyAirplane.cpp",
+              "RelativeToolTip": "MP_ADPRG\\EnemyAirplane.cpp",
+              "ViewState": "AgIAABMAAAAAAAAAAAAnwEIAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-15T00:35:46.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProjectileObject.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\ProjectileObject.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\ProjectileObject.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\ProjectileObject.cpp",
+              "RelativeToolTip": "MP_ADPRG\\ProjectileObject.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-17T02:57:03.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EnemyInputController.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemyInputController.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\EnemyInputController.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemyInputController.cpp",
+              "RelativeToolTip": "MP_ADPRG\\EnemyInputController.cpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-24T09:47:32.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BGMovement.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\BGMovement.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\BGMovement.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\BGMovement.cpp",
+              "RelativeToolTip": "MP_ADPRG\\BGMovement.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-14T07:15:59.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EnemyBehavior.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemyBehavior.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\EnemyBehavior.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemyBehavior.cpp",
+              "RelativeToolTip": "MP_ADPRG\\EnemyBehavior.cpp",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAD4AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-15T00:22:43.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BGMovement.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\BGMovement.h",
+              "RelativeDocumentMoniker": "MP_ADPRG\\BGMovement.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\BGMovement.h",
+              "RelativeToolTip": "MP_ADPRG\\BGMovement.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-15T00:33:58.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BGObject.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\BGObject.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\BGObject.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\BGObject.cpp",
+              "RelativeToolTip": "MP_ADPRG\\BGObject.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-14T07:18:29.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EnemyBehavior.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemyBehavior.h",
+              "RelativeDocumentMoniker": "MP_ADPRG\\EnemyBehavior.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemyBehavior.h",
+              "RelativeToolTip": "MP_ADPRG\\EnemyBehavior.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-15T00:23:17.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ApplicationManager.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\SFML-SCRATCHPROJECT\\SFML_ADPRG_PROJECT\\SFML_ADPRG_PROJECT\\ApplicationManager.cpp",
+              "RelativeDocumentMoniker": "..\\SFML-SCRATCHPROJECT\\SFML_ADPRG_PROJECT\\SFML_ADPRG_PROJECT\\ApplicationManager.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\SFML-SCRATCHPROJECT\\SFML_ADPRG_PROJECT\\SFML_ADPRG_PROJECT\\ApplicationManager.cpp",
+              "RelativeToolTip": "..\\SFML-SCRATCHPROJECT\\SFML_ADPRG_PROJECT\\SFML_ADPRG_PROJECT\\ApplicationManager.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-14T07:15:08.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\Main.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\Main.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\Main.cpp",
+              "RelativeToolTip": "MP_ADPRG\\Main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-15T04:19:11.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UIData.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\UIData.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\UIData.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\UIData.cpp",
+              "RelativeToolTip": "MP_ADPRG\\UIData.cpp",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwBUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-17T14:50:41.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UIManager.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\UIManager.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\UIManager.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\UIManager.cpp",
+              "RelativeToolTip": "MP_ADPRG\\UIManager.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-17T20:50:20.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UIManager.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\UIManager.h",
+              "RelativeDocumentMoniker": "MP_ADPRG\\UIManager.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\UIManager.h",
+              "RelativeToolTip": "MP_ADPRG\\UIManager.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-17T20:50:27.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UIData.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\UIData.h",
+              "RelativeDocumentMoniker": "MP_ADPRG\\UIData.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\UIData.h",
+              "RelativeToolTip": "MP_ADPRG\\UIData.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-17T14:50:51.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Renderer.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\Renderer.h",
+              "RelativeDocumentMoniker": "MP_ADPRG\\Renderer.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\Renderer.h",
+              "RelativeToolTip": "MP_ADPRG\\Renderer.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-12T01:31:22.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AbstractGameObject.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\AbstractGameObject.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\AbstractGameObject.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\AbstractGameObject.cpp",
+              "RelativeToolTip": "MP_ADPRG\\AbstractGameObject.cpp",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAADcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-15T00:54:22.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GameScene.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\GameScene.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\GameScene.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\GameScene.cpp",
+              "RelativeToolTip": "MP_ADPRG\\GameScene.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-14T07:14:52.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ObjectPoolHolder.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\ObjectPoolHolder.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\ObjectPoolHolder.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\ObjectPoolHolder.cpp",
+              "RelativeToolTip": "MP_ADPRG\\ObjectPoolHolder.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-17T02:59:05.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ObjectPoolHolder.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\ObjectPoolHolder.h",
+              "RelativeDocumentMoniker": "MP_ADPRG\\ObjectPoolHolder.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\ObjectPoolHolder.h",
+              "RelativeToolTip": "MP_ADPRG\\ObjectPoolHolder.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-17T02:56:31.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "vector",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\include\\vector",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\include\\vector",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\include\\vector",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\include\\vector",
+              "ViewState": "AgIAAEUHAAAAAAAAAAAcwF8HAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-15T07:36:36.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Game.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\Game.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\Game.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\Game.cpp",
+              "RelativeToolTip": "MP_ADPRG\\Game.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-11T18:27:29.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "GameScreen.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\GameScreen.h",
+              "RelativeDocumentMoniker": "MP_ADPRG\\GameScreen.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\GameScreen.h",
+              "RelativeToolTip": "MP_ADPRG\\GameScreen.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-15T09:22:33.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "EnemyAirplane.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemyAirplane.h",
+              "RelativeDocumentMoniker": "MP_ADPRG\\EnemyAirplane.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\EnemyAirplane.h",
+              "RelativeToolTip": "MP_ADPRG\\EnemyAirplane.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-15T22:24:35.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "PlayerMovement.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\PlayerMovement.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\PlayerMovement.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\PlayerMovement.cpp",
+              "RelativeToolTip": "MP_ADPRG\\PlayerMovement.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-14T07:24:42.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "HUD.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\HUD.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\HUD.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\HUD.cpp",
+              "RelativeToolTip": "MP_ADPRG\\HUD.cpp",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-15T07:38:45.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Game.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\Game.h",
+              "RelativeDocumentMoniker": "MP_ADPRG\\Game.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\Game.h",
+              "RelativeToolTip": "MP_ADPRG\\Game.h",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAhwB0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-11T18:27:49.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "PlayerInputController.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\PlayerInputController.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\PlayerInputController.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\PlayerInputController.cpp",
+              "RelativeToolTip": "MP_ADPRG\\PlayerInputController.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-14T07:27:37.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "GenericInputController.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\GenericInputController.h",
+              "RelativeDocumentMoniker": "MP_ADPRG\\GenericInputController.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\GenericInputController.h",
+              "RelativeToolTip": "MP_ADPRG\\GenericInputController.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-15T03:51:01.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "GenericInputController.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\GenericInputController.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\GenericInputController.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\GenericInputController.cpp",
+              "RelativeToolTip": "MP_ADPRG\\GenericInputController.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-15T01:58:15.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "TextureManager.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\TextureManager.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\TextureManager.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\TextureManager.cpp",
+              "RelativeToolTip": "MP_ADPRG\\TextureManager.cpp",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-14T08:00:22.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "TextureManager.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\TextureManager.h",
+              "RelativeDocumentMoniker": "MP_ADPRG\\TextureManager.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\TextureManager.h",
+              "RelativeToolTip": "MP_ADPRG\\TextureManager.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-14T08:13:38.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "PlayerMovement.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\PlayerMovement.h",
+              "RelativeDocumentMoniker": "MP_ADPRG\\PlayerMovement.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\PlayerMovement.h",
+              "RelativeToolTip": "MP_ADPRG\\PlayerMovement.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-14T07:26:05.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "UIButton.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\UIButton.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\UIButton.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\UIButton.cpp",
+              "RelativeToolTip": "MP_ADPRG\\UIButton.cpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACsAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-14T07:46:19.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "PlayerInputController.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\PlayerInputController.h",
+              "RelativeDocumentMoniker": "MP_ADPRG\\PlayerInputController.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\PlayerInputController.h",
+              "RelativeToolTip": "MP_ADPRG\\PlayerInputController.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-14T07:27:38.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "RendererFactory.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\RendererFactory.cpp",
+              "RelativeDocumentMoniker": "MP_ADPRG\\RendererFactory.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\RendererFactory.cpp",
+              "RelativeToolTip": "MP_ADPRG\\RendererFactory.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-12T01:44:21.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "RendererFactory.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\RendererFactory.h",
+              "RelativeDocumentMoniker": "MP_ADPRG\\RendererFactory.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\RendererFactory.h",
+              "RelativeToolTip": "MP_ADPRG\\RendererFactory.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-12T01:44:32.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "AbstractRendererFactory.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\AbstractRendererFactory.h",
+              "RelativeDocumentMoniker": "MP_ADPRG\\AbstractRendererFactory.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\AbstractRendererFactory.h",
+              "RelativeToolTip": "MP_ADPRG\\AbstractRendererFactory.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-12T01:42:43.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "AbstractComponent.h",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\AbstractComponent.h",
+              "RelativeDocumentMoniker": "MP_ADPRG\\AbstractComponent.h",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\MP_ADPRG_OFFICIAL\\MP_ADPRG\\AbstractComponent.h",
+              "RelativeToolTip": "MP_ADPRG\\AbstractComponent.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-12T01:36:59.681Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 151,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

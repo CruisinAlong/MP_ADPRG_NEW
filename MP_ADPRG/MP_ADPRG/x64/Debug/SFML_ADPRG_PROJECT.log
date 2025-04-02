@@ -1,0 +1,271 @@
+﻿  AbstractGameObject.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'AbstractGameObject.cpp')
+  
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\AbstractGameObject.cpp(191,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  AbstractPoolable.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'AbstractPoolable.cpp')
+  
+  AbstractScene.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'AbstractScene.cpp')
+  
+  AirplanePlayer.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'AirplanePlayer.cpp')
+  
+  AirplaneSupportMovement.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'AirplaneSupportMovement.cpp')
+  
+  BGMovement.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'BGMovement.cpp')
+  
+  BGObject.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'BGObject.cpp')
+  
+  Collider.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'Collider.cpp')
+  
+  ConfirmationScreen.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'ConfirmationScreen.cpp')
+  
+  EmptyGameObject.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'EmptyGameObject.cpp')
+  
+  EnemyAirplane.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'EnemyAirplane.cpp')
+  
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\EnemyAirplane.h(24,26): warning C4244: 'initializing': conversion from 'float' to 'const int', possible loss of data
+  (compiling source file 'EnemyAirplane.cpp')
+  
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\EnemyAirplane.cpp(19,53): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\EnemyAirplane.cpp(19,53): warning C4244:         with
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\EnemyAirplane.cpp(19,53): warning C4244:         [
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\EnemyAirplane.cpp(19,53): warning C4244:             T=unsigned int
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\EnemyAirplane.cpp(19,53): warning C4244:         ]
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\EnemyAirplane.cpp(19,34): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\EnemyAirplane.cpp(19,34): warning C4244:         with
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\EnemyAirplane.cpp(19,34): warning C4244:         [
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\EnemyAirplane.cpp(19,34): warning C4244:             T=unsigned int
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\EnemyAirplane.cpp(19,34): warning C4244:         ]
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\EnemyAirplane.cpp(22,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\EnemyAirplane.cpp(51,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  EnemyBehavior.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'EnemyBehavior.cpp')
+  
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\EnemyBehavior.cpp(26,71): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\EnemyBehavior.cpp(29,72): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  EnemySwarmHandler.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'EnemySwarmHandler.cpp')
+  
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\EnemyAirplane.h(24,26): warning C4244: 'initializing': conversion from 'float' to 'const int', possible loss of data
+  (compiling source file 'EnemySwarmHandler.cpp')
+  
+  Game.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'Game.cpp')
+  
+  GameObjectManager.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'GameObjectManager.cpp')
+  
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\GameObjectManager.cpp(36,29): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  GameObjectPool.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'GameObjectPool.cpp')
+  
+  GameScene.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'GameScene.cpp')
+  
+  GameScreen.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'GameScreen.cpp')
+  
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\GameScreen.cpp(36,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  AirplaneSupport.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'AirplaneSupport.cpp')
+  
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\AirplaneSupport.cpp(17,62): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\AirplaneSupport.cpp(17,62): warning C4244:         with
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\AirplaneSupport.cpp(17,62): warning C4244:         [
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\AirplaneSupport.cpp(17,62): warning C4244:             T=unsigned int
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\AirplaneSupport.cpp(17,62): warning C4244:         ]
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\AirplaneSupport.cpp(17,43): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\AirplaneSupport.cpp(17,43): warning C4244:         with
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\AirplaneSupport.cpp(17,43): warning C4244:         [
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\AirplaneSupport.cpp(17,43): warning C4244:             T=unsigned int
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\AirplaneSupport.cpp(17,43): warning C4244:         ]
+  HUD.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'HUD.cpp')
+  
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(17,56): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(17,56): warning C4244:         with
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(17,56): warning C4244:         [
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(17,56): warning C4244:             T=unsigned int
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(17,56): warning C4244:         ]
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(17,37): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(17,37): warning C4244:         with
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(17,37): warning C4244:         [
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(17,37): warning C4244:             T=unsigned int
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(17,37): warning C4244:         ]
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(23,16): warning C4244: 'initializing': conversion from 'T' to 'float', possible loss of data
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(23,16): warning C4244:         with
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(23,16): warning C4244:         [
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(23,16): warning C4244:             T=unsigned int
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(23,16): warning C4244:         ]
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(24,16): warning C4244: 'initializing': conversion from 'T' to 'float', possible loss of data
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(24,16): warning C4244:         with
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(24,16): warning C4244:         [
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(24,16): warning C4244:             T=unsigned int
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(24,16): warning C4244:         ]
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(32,71): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(32,71): warning C4244:         with
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(32,71): warning C4244:         [
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(32,71): warning C4244:             T=unsigned int
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(32,71): warning C4244:         ]
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(32,47): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(32,47): warning C4244:         with
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(32,47): warning C4244:         [
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(32,47): warning C4244:             T=unsigned int
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\HUD.cpp(32,47): warning C4244:         ]
+  Generating Code...
+  Compiling...
+  Main.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'Main.cpp')
+  
+  MainMenuScene.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'MainMenuScene.cpp')
+  
+  MainMenuScreen.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'MainMenuScreen.cpp')
+  
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\MainMenuScreen.cpp(19,58): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\MainMenuScreen.cpp(19,58): warning C4244:         with
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\MainMenuScreen.cpp(19,58): warning C4244:         [
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\MainMenuScreen.cpp(19,58): warning C4244:             T=unsigned int
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\MainMenuScreen.cpp(19,58): warning C4244:         ]
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\MainMenuScreen.cpp(19,39): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\MainMenuScreen.cpp(19,39): warning C4244:         with
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\MainMenuScreen.cpp(19,39): warning C4244:         [
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\MainMenuScreen.cpp(19,39): warning C4244:             T=unsigned int
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\MainMenuScreen.cpp(19,39): warning C4244:         ]
+  ObjectPoolHolder.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'ObjectPoolHolder.cpp')
+  
+  PhysicsManager.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'PhysicsManager.cpp')
+  
+  PlayerMovement.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'PlayerMovement.cpp')
+  
+  ProjectileMovement.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'ProjectileMovement.cpp')
+  
+  ProjectileObject.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'ProjectileObject.cpp')
+  
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\ProjectileObject.cpp(11,53): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\ProjectileObject.cpp(11,53): warning C4244:         with
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\ProjectileObject.cpp(11,53): warning C4244:         [
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\ProjectileObject.cpp(11,53): warning C4244:             T=unsigned int
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\ProjectileObject.cpp(11,53): warning C4244:         ]
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\ProjectileObject.cpp(11,34): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\ProjectileObject.cpp(11,34): warning C4244:         with
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\ProjectileObject.cpp(11,34): warning C4244:         [
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\ProjectileObject.cpp(11,34): warning C4244:             T=unsigned int
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\ProjectileObject.cpp(11,34): warning C4244:         ]
+  Renderer.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'Renderer.cpp')
+  
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\Renderer.cpp(31,27): error C2440: 'return': cannot convert from 'SpriteRenderer *' to 'Renderer *'
+      C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\Renderer.cpp(31,27):
+      Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+  
+  SceneManager.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'SceneManager.cpp')
+  
+  SpriteRenderer.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.cpp(8,53): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.cpp(8,53): warning C4244:         with
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.cpp(8,53): warning C4244:         [
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.cpp(8,53): warning C4244:             T=unsigned int
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.cpp(8,53): warning C4244:         ]
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.cpp(8,34): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.cpp(8,34): warning C4244:         with
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.cpp(8,34): warning C4244:         [
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.cpp(8,34): warning C4244:             T=unsigned int
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.cpp(8,34): warning C4244:         ]
+  TitleScene.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'TitleScene.cpp')
+  
+  TitleScreen.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'TitleScreen.cpp')
+  
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\TitleScreen.cpp(12,58): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\TitleScreen.cpp(12,58): warning C4244:         with
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\TitleScreen.cpp(12,58): warning C4244:         [
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\TitleScreen.cpp(12,58): warning C4244:             T=unsigned int
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\TitleScreen.cpp(12,58): warning C4244:         ]
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\TitleScreen.cpp(12,39): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\TitleScreen.cpp(12,39): warning C4244:         with
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\TitleScreen.cpp(12,39): warning C4244:         [
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\TitleScreen.cpp(12,39): warning C4244:             T=unsigned int
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\TitleScreen.cpp(12,39): warning C4244:         ]
+  UIButton.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'UIButton.cpp')
+  
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\UIButton.cpp(18,53): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\UIButton.cpp(18,53): warning C4244:         with
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\UIButton.cpp(18,53): warning C4244:         [
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\UIButton.cpp(18,53): warning C4244:             T=unsigned int
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\UIButton.cpp(18,53): warning C4244:         ]
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\UIButton.cpp(18,34): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\UIButton.cpp(18,34): warning C4244:         with
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\UIButton.cpp(18,34): warning C4244:         [
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\UIButton.cpp(18,34): warning C4244:             T=unsigned int
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\UIButton.cpp(18,34): warning C4244:         ]
+  UIButtonInputController.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'UIButtonInputController.cpp')
+  
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\UIButtonInputController.cpp(22,63): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\UIButtonInputController.cpp(22,63): warning C4244:         with
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\UIButtonInputController.cpp(22,63): warning C4244:         [
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\UIButtonInputController.cpp(22,63): warning C4244:             T=float
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\UIButtonInputController.cpp(22,63): warning C4244:         ]
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\UIButtonInputController.cpp(22,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\UIButtonInputController.cpp(22,42): warning C4244:         with
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\UIButtonInputController.cpp(22,42): warning C4244:         [
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\UIButtonInputController.cpp(22,42): warning C4244:             T=float
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\UIButtonInputController.cpp(22,42): warning C4244:         ]
+  UIText.cpp
+C:\Users\ASUS\Documents\GitHub\SFML-SCRATCHPROJECT\SFML_ADPRG_PROJECT\SFML_ADPRG_PROJECT\SpriteRenderer.h(3,31): error C2504: 'Renderer': base class undefined
+  (compiling source file 'UIText.cpp')
+  
+  Generating Code...
