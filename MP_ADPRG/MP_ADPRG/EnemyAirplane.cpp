@@ -9,10 +9,6 @@ EnemyAirplane::EnemyAirplane(std::string name) : AbstractPoolable(name), Collisi
 
 }
 
-EnemyAirplane::~EnemyAirplane() {
-	delete this->sprite;
-}
-
 void EnemyAirplane::initialize() {
 	this->sprite = new sf::Sprite();
 	sprite->setTexture(*TextureManager::getInstance()->getTexture("avenger"));
@@ -58,8 +54,13 @@ AbstractPoolable* EnemyAirplane::clone() {
 void EnemyAirplane::onCollisionEnter(AbstractGameObject* contact) {
 	if (contact->getName().find("PlaneObject") != std::string::npos) {
 		std::cout << "EnemyAirplane collided with PlaneObject" << std::endl;
+		UIData* scoreData = UIManager::getInstance()->getUIData(UIManager::SCORE_UI_KEY);
+		scoreData->putInt(UIManager::SCORE_UI_KEY, scoreData->getInt(UIManager::SCORE_UI_KEY, 0) + 100);
+		scoreData->refreshTextFromData("scoreText", UIManager::SCORE_UI_KEY, "Score: ");
 	}
 }
+
+
 
 void EnemyAirplane::onCollisionExit(AbstractGameObject* gameObject) {
 

@@ -34,3 +34,4 @@ void AbstractComponent::attachOwner(AbstractGameObject* object) {
 void AbstractComponent::detachOwner() {
 	delete this;
 }
+

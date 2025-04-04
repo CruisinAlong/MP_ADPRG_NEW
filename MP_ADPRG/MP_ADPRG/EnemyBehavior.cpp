@@ -7,9 +7,7 @@ EnemyBehavior::EnemyBehavior(std::string name) : AbstractComponent(name, Script)
     this->reset();
 }
 
-EnemyBehavior::~EnemyBehavior() {
-    delete inputController;
-}
+
 
 
 void EnemyBehavior::perform() {

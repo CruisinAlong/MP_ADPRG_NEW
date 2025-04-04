@@ -15,6 +15,8 @@
 #include <iostream>
 #include "EmptyGameObject.h"
 #include "EnemyGroundSwarmHandler.h"
+#include "UIData.h"
+#include "BGMovement.h"
 #include <ctime>
 
 class GameScreen : public AbstractGameObject, public ButtonListener {
@@ -23,12 +25,18 @@ public:
     void initialize() override;
     void onButtonClick(UIButton* button) override;
     void onButtonReleased(UIButton* button) override;
+    void update(sf::Time deltaTime);
 
 private:
+    void endLevel();
+    void startNextLevel();
+
     AirplanePlayer* planeObject;
     AirplaneSupport* support1;
     AirplaneSupport* support2;
     GameObjectPool* enemyPool;
+    UIText* scoreText;
+    UIData* scoreData;
     HUD* hud;
     UIButton* quitButton;
     UIText* quitButtonText;
@@ -37,6 +45,9 @@ private:
     UIButton* noButton;
     UIText* yesButtonText;
     UIText* noButtonText;
+    BGObject* bgObject;
     bool showConfirmationPopup;
+
+
 };
 

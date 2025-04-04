@@ -7,7 +7,6 @@ public:
 	enum EnemyMovementType { Static = 0, SlowForward = 1 };
 
 	EnemyBehavior(std::string name);
-	~EnemyBehavior();
 	void perform() override;
 	void configure(EnemyMovementType type, float delay = 0.0f);
 	void reset();

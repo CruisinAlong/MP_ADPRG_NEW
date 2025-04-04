@@ -5,11 +5,11 @@
 #include "Renderer.h"
 #include "EnemyBehavior.h"
 #include "Collider.h"
+#include "UIManager.h"
 
 class EnemyGroundUnit : public AbstractPoolable, public CollisionListener {
 public:
     EnemyGroundUnit(std::string name);
-    ~EnemyGroundUnit();
 
     void initialize() override;
     void onRelease() override;

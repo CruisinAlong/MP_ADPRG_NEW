@@ -1,15 +1,4 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (SFML_ADPRG_PROJECT.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  BallObject.cpp
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BallObject.cpp(20,56): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BallObject.cpp(20,56): warning C4244:         with
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BallObject.cpp(20,56): warning C4244:         [
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BallObject.cpp(20,56): warning C4244:             T=unsigned int
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BallObject.cpp(20,56): warning C4244:         ]
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BallObject.cpp(20,37): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BallObject.cpp(20,37): warning C4244:         with
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BallObject.cpp(20,37): warning C4244:         [
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BallObject.cpp(20,37): warning C4244:             T=unsigned int
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BallObject.cpp(20,37): warning C4244:         ]
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BallObject.cpp(22,72): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BallObject.cpp(22,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  BallScreen.cpp
+C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BallScreen.cpp(34,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   MP_ADPRG.vcxproj -> C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\x64\Debug\MP_ADPRG.exe

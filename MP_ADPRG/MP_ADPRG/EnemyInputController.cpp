@@ -5,10 +5,6 @@ EnemyInputController::EnemyInputController(std::string name) : GenericInputContr
     std::cout << "EnemyInputController [" << name << "] created." << std::endl; // Debug log
 }
 
-EnemyInputController::~EnemyInputController() {
-    std::cout << "EnemyInputController [" << name << "] destroyed." << std::endl; // Debug log
-}
-
 void EnemyInputController::perform() {
     bool keyFlag = false;
     if (event.type == sf::Event::KeyPressed) {

@@ -31,6 +31,8 @@ public:
 	void setPosition(float x, float y);
 	void setEnabled(bool flag);
 	bool isEnabled();
+	AbstractComponent* getComponentByName(const std::string& name);
+
 protected:
 	sf::Transformable transformable;
 	std::string name;

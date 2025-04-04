@@ -6,12 +6,13 @@
 #include <iostream>
 #include "TextureManager.h"
 #include "Game.h"
+#include "UIManager.h" 
+#include "UIData.h" 
 #include <SFML/Graphics.hpp>
 
 class BallObject : public AbstractPoolable, public CollisionListener {
 public:
     BallObject(std::string name);
-    ~BallObject();
     void initialize() override;
     void onRelease() override;
     void onActivate() override;

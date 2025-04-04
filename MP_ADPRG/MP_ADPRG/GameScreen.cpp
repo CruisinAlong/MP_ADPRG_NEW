@@ -13,8 +13,7 @@ void GameScreen::initialize() {
     sf::Texture* btnNormalTexture = TextureManager::getInstance()->getTexture("btn_normal");
     sf::Texture* btnPressedTexture = TextureManager::getInstance()->getTexture("btn_pressed");
 
-
-    BGObject* bgObject = new BGObject("bgObject");
+    bgObject = new BGObject("bgObject");
     GameObjectManager::getInstance()->addObject(bgObject);
 
     std::cout << "Creating PlaneObject" << std::endl;
@@ -84,6 +83,18 @@ void GameScreen::initialize() {
     GameObjectManager::getInstance()->addObject(mainMenu);
     mainMenu->setEnabled(false);
 
+    UIText* scoreText = new UIText("scoreText");
+    GameObjectManager::getInstance()->addObject(scoreText);
+    scoreText->setPosition(10.0f, 10.0f);
+    scoreText->setSize(20);
+    scoreText->setText("SCORE: 1000000");
+
+    UIData* scoreData = UIManager::getInstance()->storeData(UIManager::SCORE_UI_KEY);
+    scoreData->bindUIText(scoreText);
+    scoreData->putInt(UIManager::SCORE_UI_KEY, 0);
+    scoreData->refreshTextFromData("scoreText", UIManager::SCORE_UI_KEY, "Score: ");
+
+
     std::cout << "GameScreen initialization complete" << std::endl;
 }
 
@@ -112,5 +123,36 @@ void GameScreen::onButtonClick(UIButton* button) {
 
 void GameScreen::onButtonReleased(UIButton* button) {
     std::cout << button->getName() << " released" << std::endl;
+}
+
+void GameScreen::update(sf::Time deltaTime) {
+    // Check if the level should end
+    BGMovement* bgMovement = dynamic_cast<BGMovement*>(bgObject->getComponentByName("BGMovement"));
+    if (bgMovement && bgMovement->isLevelFinished()) {
+        endLevel();
+        // Delay the level end to allow for any animations or transitions
+        sf::sleep(sf::seconds(2)); // Example delay of 2 seconds
+        startNextLevel();
+    }
+}
+
+void GameScreen::endLevel() {
+    std::cout << "Level ended." << std::endl;
+    // Pause the game
+    ApplicationManager::getInstance()->pauseApplication();
+    // Overlay a screen here and PAUSE the game
+    UIText* endLevelText = new UIText("EndLevelText");
+    endLevelText->setText("Level Complete!");
+    endLevelText->setPosition(320.0f, 240.0f); // Center of the screen
+    GameObjectManager::getInstance()->addObject(endLevelText);
+
+
+}
+
+void GameScreen::startNextLevel() {
+    std::cout << "Starting next level." << std::endl;
+    // Load the next level
+    SceneManager::getInstance()->loadScene("BallScene");
+	ApplicationManager::getInstance()->resumeApplication();
 }
 

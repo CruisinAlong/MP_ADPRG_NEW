@@ -2,12 +2,7 @@
 #include "BGObject.h"
 #include <iostream>
 
-BGMovement::BGMovement(std::string name) : AbstractComponent(name, Script) {
-}
-
-BGMovement::~BGMovement() {
-    // Clean up the BGInputController
-    delete inputController;
+BGMovement::BGMovement(std::string name) : AbstractComponent(name, Script) {    
 }
 
 void BGMovement::perform() {
@@ -25,8 +20,17 @@ void BGMovement::perform() {
         bgTransformable->move(offset);
         moving = true;
 
-        // Debug log to see if the background is moving
+        // Update distance traveled
+        distanceTraveled += std::abs(offset.x);
+		std::cout << "Distance traveled: " << distanceTraveled << std::endl;
+
+        // Check if the level should end
+        if (distanceTraveled >= LEVEL_END_DISTANCE) {
+            levelFinished = true;
+        }
+
         sf::Vector2f newPosition = bgTransformable->getPosition();
+
     }
     else {
         moving = false;
@@ -35,6 +39,10 @@ void BGMovement::perform() {
 
 void BGMovement::setInputController(BGInputController* inputController) {
     this->inputController = inputController;
+}
+
+bool BGMovement::isLevelFinished() const {
+    return levelFinished;
 }
 
 

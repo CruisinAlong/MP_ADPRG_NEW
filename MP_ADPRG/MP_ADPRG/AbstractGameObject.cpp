@@ -15,7 +15,10 @@ AbstractGameObject::~AbstractGameObject()
         delete this->sprite;
     }
 	for (int i = 0; i < this->componentList.size(); i++) {
-		delete this->componentList[i];
+        if (this->componentList[i] != nullptr) {
+            std::cout << "Deleting component: " << this->componentList[i]->getName() << std::endl; // Debug log
+            delete this->componentList[i];
+        }
 	}
 	for (int i = 0; i < this->childList.size(); i++) {
 		delete this->childList[i];
@@ -198,6 +201,15 @@ sf::Transform AbstractGameObject::getGlobalTransform() {
 sf::RenderWindow* AbstractGameObject::getRenderWindow() {
     if (mParent) {
         return mParent->getRenderWindow();
+    }
+    return nullptr;
+}
+
+AbstractComponent* AbstractGameObject::getComponentByName(const std::string& name) {
+    for (AbstractComponent* component : componentList) {
+        if (component->getName() == name) {
+            return component;
+        }
     }
     return nullptr;
 }

@@ -1,9 +1,9 @@
 #include "UIManager.h"
 
 
-UIManager* UIManager::sharedInstance = nullptr;
+UIManager* UIManager::sharedInstance = NULL;
 
-const string UIManager::SCORE_UI_KEY = "score";
+const string UIManager::SCORE_UI_KEY = "SCORE_UI_KEY";
 
 UIManager* UIManager::getInstance() {
 	if (sharedInstance == nullptr) {

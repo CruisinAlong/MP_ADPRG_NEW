@@ -3,6 +3,7 @@
 
 #include "AbstractComponent.h"
 #include "GameObjectPool.h"
+#include "BallObject.h"
 #include <random>
 
 class BallObjectHandler : public AbstractComponent {

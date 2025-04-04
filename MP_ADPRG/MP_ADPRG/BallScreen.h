@@ -4,6 +4,7 @@
 #include "AirplanePlayer.h"
 #include "AbstractGameObject.h"
 #include "ButtonListener.h"
+#include "UIData.h"
 
 class BallScreen : public AbstractGameObject, public ButtonListener {
 public:
@@ -15,4 +16,6 @@ public:
 private:
     BGObject* bgObject;
     AirplanePlayer* player;
+    UIText* scoreText;
+    UIData* scoreData;
 };

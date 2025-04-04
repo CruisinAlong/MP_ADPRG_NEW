@@ -5,14 +5,17 @@
 class BGMovement : public AbstractComponent {
 public:
     BGMovement(std::string name);
-    ~BGMovement(); 
     void perform() override;
     void setInputController(BGInputController* inputController); 
     bool isMoving() const;
+    bool isLevelFinished() const;
 
 private:
     const float SPEED = 50.f;
     BGInputController* inputController = nullptr; 
     bool moving = false;
+    float distanceTraveled = 0.0f;
+    const float LEVEL_END_DISTANCE = 1000.0f; 
+    bool levelFinished = false;
 };
 

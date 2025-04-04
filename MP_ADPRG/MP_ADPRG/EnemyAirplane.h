@@ -4,11 +4,12 @@
 #include "CollisionListener.h"
 #include "ObjectPoolHolder.h"
 #include "PhysicsManager.h"
+#include "UIManager.h" 
+#include "UIData.h" 
 
 class EnemyAirplane : public AbstractPoolable , public CollisionListener {
 public:
 	EnemyAirplane(std::string name);
-	~EnemyAirplane();
 	void initialize();
 
 	void onRelease();

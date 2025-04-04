@@ -7,10 +7,6 @@
 EnemyGroundUnit::EnemyGroundUnit(std::string name) : AbstractPoolable(name), CollisionListener() {
 }
 
-EnemyGroundUnit::~EnemyGroundUnit() {
-    delete this->sprite;
-}
-
 void EnemyGroundUnit::initialize() {
     this->sprite = new sf::Sprite();
     sprite->setTexture(*TextureManager::getInstance()->getTexture("avenger"));
@@ -18,7 +14,6 @@ void EnemyGroundUnit::initialize() {
     sprite->setOrigin(textureSize.x / 2, textureSize.y / 2);
 
     this->setPosition(Game::WINDOW_WIDTH + static_cast<int>(textureSize.x) / 2, Game::WINDOW_HEIGHT - static_cast<int>(textureSize.y) / 2);
-    this->getTransformable()->move(rand() % SPAWN_RANGE - rand() % SPAWN_RANGE, 0);
     this->getTransformable()->setRotation(0);
 
     Renderer* renderer = new Renderer("EnemySprite");
@@ -62,6 +57,9 @@ AbstractPoolable* EnemyGroundUnit::clone() {
 void EnemyGroundUnit::onCollisionEnter(AbstractGameObject* contact) {
     if (contact->getName().find("PlaneObject") != std::string::npos) {
 		std::cout << "Ground Unit collided with PlaneObject" << std::endl;
+		UIData* scoreData = UIManager::getInstance()->getUIData(UIManager::SCORE_UI_KEY);
+        scoreData->putInt(UIManager::SCORE_UI_KEY, scoreData->getInt(UIManager::SCORE_UI_KEY, 0) - 100);
+		scoreData->refreshTextFromData("scoreText", UIManager::SCORE_UI_KEY, "Score: ");
     }
 }
 

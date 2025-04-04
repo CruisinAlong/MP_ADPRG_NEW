@@ -2,6 +2,7 @@
 #include "BallScreen.h"
 #include "TextureManager.h"
 #include "GameObjectManager.h"
+#include "UIManager.h"
 #include "BGObject.h"
 #include "AirplanePlayer.h"
 #include "BallObjectHandler.h"
@@ -12,6 +13,12 @@ BallScreen::BallScreen(std::string name) : AbstractGameObject(name), ButtonListe
 void BallScreen::initialize() {
     std::cout << "BallScreen initialize called for: " << this->getName() << std::endl;
 
+    if (PhysicsManager::getInstance() == nullptr) {
+		std::cout << "Creating PhysicsManager" << std::endl;
+        PhysicsManager::initialize("PhysicsManager", this);
+    }
+
+
     // Load background
     bgObject = new BGObject("bgObject");
     GameObjectManager::getInstance()->addObject(bgObject);
@@ -21,6 +28,8 @@ void BallScreen::initialize() {
     player = new AirplanePlayer("PlayerObject");
     GameObjectManager::getInstance()->addObject(player);
 
+
+
     // Initialize ball handler
     srand(time(nullptr));
     std::cout << "Creating BallManager" << std::endl;
@@ -28,6 +37,18 @@ void BallScreen::initialize() {
     BallObjectHandler* ballHandler = new BallObjectHandler(10, "BallHandler", ballManager);
     ballManager->attachComponent(ballHandler);
     GameObjectManager::getInstance()->addObject(ballManager);
+
+    // Initialize score text and score data
+    UIText* scoreText = new UIText("scoreText");
+    GameObjectManager::getInstance()->addObject(scoreText);
+    scoreText->setPosition(10.0f, 10.0f);
+    scoreText->setSize(20);
+    scoreText->setText("SCORE: 1000000");
+
+	UIData* scoreData = UIManager::getInstance()->storeData(UIManager::SCORE_UI_KEY);
+    scoreData->bindUIText(scoreText);
+    scoreData->putInt(UIManager::SCORE_UI_KEY, 0);
+    scoreData->refreshTextFromData("scoreText", UIManager::SCORE_UI_KEY, "Score: ");
 }
 
 void BallScreen::onButtonClick(UIButton* button) {
