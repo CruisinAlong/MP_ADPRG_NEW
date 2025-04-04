@@ -8,15 +8,28 @@ BGObject::BGObject(std::string name) : AbstractGameObject(name) {
 
 void BGObject::initialize() {
     std::cout << "BGObject initialized" << std::endl;
-    sprite = new sf::Sprite();
-    sprite->setTexture(*TextureManager::getInstance()->getTexture("desert_bg"));
-    sf::Vector2u textureSize = sprite->getTexture()->getSize();
-    sprite->setTextureRect(sf::IntRect(0, 0, Game::WINDOW_WIDTH, Game::WINDOW_HEIGHT * 8));
-    sprite->setPosition(0, -Game::WINDOW_HEIGHT * 7);
+    // Load the texture
+    sf::Texture* texture = TextureManager::getInstance()->getTexture("desert_bg");
+    sf::Vector2u textureSize = texture->getSize();
 
-    Renderer* renderer = new Renderer("BGSprite");
-    renderer->assignDrawable(sprite);
-    this->attachComponent(renderer);
+    // Calculate the number of sprites needed to cover the window width
+    int numSprites = (Game::WINDOW_WIDTH / textureSize.x) + 5;
+
+    // Create and position the sprites
+    for (int i = 0; i < numSprites; ++i) {
+        sf::Sprite* sprite = new sf::Sprite();
+        sprite->setTexture(*texture);
+        sprite->setTextureRect(sf::IntRect(0, 0, textureSize.x, Game::WINDOW_HEIGHT * 8));
+        sprite->setPosition(i * textureSize.x, -Game::WINDOW_HEIGHT * 7);
+
+        // Store the sprite in a vector for later use
+        sprites.push_back(sprite);
+
+        // Create a renderer for each sprite and attach it
+        Renderer* renderer = new Renderer("BGSprite" + std::to_string(i));
+        renderer->assignDrawable(sprite);
+        this->attachComponent(renderer);
+    }
     BGInputController* inputController = new BGInputController("BGInputController");
     this->attachComponent(inputController);
     BGMovement* movement = new BGMovement("BGMovement");

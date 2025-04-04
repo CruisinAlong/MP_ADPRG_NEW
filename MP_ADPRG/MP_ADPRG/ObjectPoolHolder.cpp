@@ -6,6 +6,8 @@ const std::string ObjectPoolHolder::PROJECTILE_POOL_TAG = "ProjectilePool";
 
 const std::string ObjectPoolHolder::GROUND_POOL_TAG = "GroundPool";
 
+const std::string ObjectPoolHolder::BALL_POOL_TAG = "BallPool";
+
 ObjectPoolHolder* ObjectPoolHolder::sharedInstance = nullptr;
 
 ObjectPoolHolder* ObjectPoolHolder::getInstance() {

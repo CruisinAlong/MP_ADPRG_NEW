@@ -7,6 +7,9 @@ C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\AirplanePlay
 C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\AirplaneSupport.cpp;C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\x64\Debug\AirplaneSupport.obj
 C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\AirplaneSupportMovement.cpp;C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\x64\Debug\AirplaneSupportMovement.obj
 C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\ApplicationManager.cpp;C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\x64\Debug\ApplicationManager.obj
+C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BallMovement.cpp;C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\x64\Debug\BallMovement.obj
+C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BallObject.cpp;C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\x64\Debug\BallObject.obj
+C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BallObjectHandler.cpp;C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\x64\Debug\BallObjectHandler.obj
 C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BallScene.cpp;C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\x64\Debug\BallScene.obj
 C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BallScreen.cpp;C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\x64\Debug\BallScreen.obj
 C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BGInputController.cpp;C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\x64\Debug\BGInputController.obj

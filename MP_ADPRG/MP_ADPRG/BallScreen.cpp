@@ -4,6 +4,7 @@
 #include "GameObjectManager.h"
 #include "BGObject.h"
 #include "AirplanePlayer.h"
+#include "BallObjectHandler.h"
 #include <iostream>
 
 BallScreen::BallScreen(std::string name) : AbstractGameObject(name), ButtonListener() {}
@@ -19,6 +20,14 @@ void BallScreen::initialize() {
     std::cout << "Creating PlayerObject" << std::endl;
     player = new AirplanePlayer("PlayerObject");
     GameObjectManager::getInstance()->addObject(player);
+
+    // Initialize ball handler
+    srand(time(nullptr));
+    std::cout << "Creating BallManager" << std::endl;
+    EmptyGameObject* ballManager = new EmptyGameObject("BallManager");
+    BallObjectHandler* ballHandler = new BallObjectHandler(10, "BallHandler", ballManager);
+    ballManager->attachComponent(ballHandler);
+    GameObjectManager::getInstance()->addObject(ballManager);
 }
 
 void BallScreen::onButtonClick(UIButton* button) {

@@ -139,6 +139,9 @@
     <ClCompile Include="AirplaneSupport.cpp" />
     <ClCompile Include="AirplaneSupportMovement.cpp" />
     <ClCompile Include="ApplicationManager.cpp" />
+    <ClCompile Include="BallMovement.cpp" />
+    <ClCompile Include="BallObject.cpp" />
+    <ClCompile Include="BallObjectHandler.cpp" />
     <ClCompile Include="BallScene.cpp" />
     <ClCompile Include="BallScreen.cpp" />
     <ClCompile Include="BGInputController.cpp" />
@@ -196,6 +199,9 @@
     <ClInclude Include="AirplaneSupport.h" />
     <ClInclude Include="AirplaneSupportMovement.h" />
     <ClInclude Include="ApplicationManager.h" />
+    <ClInclude Include="BallMovement.h" />
+    <ClInclude Include="BallObject.h" />
+    <ClInclude Include="BallObjectHandler.h" />
     <ClInclude Include="BallScene.h" />
     <ClInclude Include="BallScreen.h" />
     <ClInclude Include="BGInputController.h" />

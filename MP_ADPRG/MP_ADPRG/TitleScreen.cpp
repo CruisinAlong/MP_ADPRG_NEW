@@ -90,7 +90,7 @@ void TitleScreen::initialize() {
 void TitleScreen::onButtonClick(UIButton* button) {
     std::cout << button->getName() << " clicked" << std::endl;
     if (button->getName() == "PlayButton") {
-        SceneManager::getInstance()->loadScene("GameScene");
+        SceneManager::getInstance()->loadScene("BallScene");
         ApplicationManager::getInstance()->resumeApplication();
     }
     else if (button->getName() == "QuitButton") {
