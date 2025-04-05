@@ -16,6 +16,7 @@ public:
 	void trackObject(Collider* object);
 	void untrackObject(Collider* object);
 	void perform();
+	void printTrackedObjects(); 
 private:
 	PhysicsManager(std::string name) : AbstractComponent(name, Script) {};
 	PhysicsManager(PhysicsManager const&) : AbstractComponent(name, Script) {};

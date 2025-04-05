@@ -3,6 +3,7 @@
 #include "PlayerInputController.h"
 #include "PlayerMovement.h"
 #include "Renderer.h"
+#include "PhysicsManager.h"
 #include <iostream>
 #include "TextureManager.h"
 #include "Collider.h"
@@ -18,6 +19,7 @@ public:
 
 	void onCollisionEnter(AbstractGameObject* contact) override;
 	void onCollisionExit(AbstractGameObject* gameObject) override;
+	void checkPositions();
 	
 private:
 	const float SPEED_MULTIPLIER = 300.f;

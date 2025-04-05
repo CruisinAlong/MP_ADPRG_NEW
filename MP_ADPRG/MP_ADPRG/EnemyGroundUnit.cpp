@@ -14,6 +14,7 @@ void EnemyGroundUnit::initialize() {
     sprite->setOrigin(textureSize.x / 2, textureSize.y / 2);
 
     this->setPosition(Game::WINDOW_WIDTH + static_cast<int>(textureSize.x) / 2, Game::WINDOW_HEIGHT - static_cast<int>(textureSize.y) / 2);
+    this->getTransformable()->move(rand() % SPAWN_RANGE, 0);
     this->getTransformable()->setRotation(0);
 
     Renderer* renderer = new Renderer("EnemySprite");
@@ -52,6 +53,10 @@ void EnemyGroundUnit::onActivate() {
 AbstractPoolable* EnemyGroundUnit::clone() {
     AbstractPoolable* copyObj = new EnemyGroundUnit(this->name);
     return copyObj;
+}
+
+void EnemyGroundUnit::update(sf::Time deltaTime) {
+    AbstractGameObject::update(deltaTime);
 }
 
 void EnemyGroundUnit::onCollisionEnter(AbstractGameObject* contact) {

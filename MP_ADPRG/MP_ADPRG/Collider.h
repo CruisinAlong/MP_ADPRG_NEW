@@ -21,6 +21,7 @@ public:
 	void removeCollision(Collider* collider);
 
 	sf::FloatRect getGlobalBounds();
+	sf::FloatRect getLocalBounds(); 
 	void setLocalBounds(sf::FloatRect bounds);
 	void collisionEnter(AbstractGameObject* gameObjects);
 	void collisionExit(AbstractGameObject* gameObjects);
@@ -35,6 +36,5 @@ private:
 	std::unordered_set<Collider*> collisions;
 	sf::FloatRect localBounds;
 	CollisionListener* listener;
-	sf::RectangleShape debugShape;
-	sf::Sprite debugSprite;
+
 };

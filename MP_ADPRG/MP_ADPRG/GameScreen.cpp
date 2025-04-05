@@ -13,6 +13,11 @@ void GameScreen::initialize() {
     sf::Texture* btnNormalTexture = TextureManager::getInstance()->getTexture("btn_normal");
     sf::Texture* btnPressedTexture = TextureManager::getInstance()->getTexture("btn_pressed");
 
+    if (PhysicsManager::getInstance() == nullptr) {
+        std::cout << "Creating PhysicsManager" << std::endl;
+        PhysicsManager::initialize("PhysicsManager", this);
+    }
+
     bgObject = new BGObject("bgObject");
     GameObjectManager::getInstance()->addObject(bgObject);
 
@@ -85,7 +90,7 @@ void GameScreen::initialize() {
 
     UIText* scoreText = new UIText("scoreText");
     GameObjectManager::getInstance()->addObject(scoreText);
-    scoreText->setPosition(10.0f, 10.0f);
+    scoreText->setPosition(50.0f, 10.0f);
     scoreText->setSize(20);
     scoreText->setText("SCORE: 1000000");
 
@@ -93,6 +98,7 @@ void GameScreen::initialize() {
     scoreData->bindUIText(scoreText);
     scoreData->putInt(UIManager::SCORE_UI_KEY, 0);
     scoreData->refreshTextFromData("scoreText", UIManager::SCORE_UI_KEY, "Score: ");
+
 
 
     std::cout << "GameScreen initialization complete" << std::endl;
@@ -131,7 +137,7 @@ void GameScreen::update(sf::Time deltaTime) {
     if (bgMovement && bgMovement->isLevelFinished()) {
         endLevel();
         // Delay the level end to allow for any animations or transitions
-        sf::sleep(sf::seconds(2)); // Example delay of 2 seconds
+        sf::sleep(sf::seconds(5)); // Example delay of 2 seconds
         startNextLevel();
     }
 }

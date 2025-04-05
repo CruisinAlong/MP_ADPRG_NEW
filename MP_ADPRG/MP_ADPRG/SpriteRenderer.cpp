@@ -1,5 +1,6 @@
 #include "SpriteRenderer.h"
 #include "TextureManager.h"
+#include <iostream>
 
 SpriteRenderer::SpriteRenderer(std::string name,std::string textureName) : Renderer(name) {
     sprite = new sf::Sprite();
@@ -7,6 +8,7 @@ SpriteRenderer::SpriteRenderer(std::string name,std::string textureName) : Rende
 	sf::Vector2u textureSize = sprite->getTexture()->getSize();
 	sprite->setOrigin(textureSize.x / 2, textureSize.y / 2);
 	this->assignDrawable(sprite);
+
 }
 
 sf::Sprite* SpriteRenderer::getSprite(){

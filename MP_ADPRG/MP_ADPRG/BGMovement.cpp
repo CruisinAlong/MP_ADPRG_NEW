@@ -22,7 +22,6 @@ void BGMovement::perform() {
 
         // Update distance traveled
         distanceTraveled += std::abs(offset.x);
-		std::cout << "Distance traveled: " << distanceTraveled << std::endl;
 
         // Check if the level should end
         if (distanceTraveled >= LEVEL_END_DISTANCE) {

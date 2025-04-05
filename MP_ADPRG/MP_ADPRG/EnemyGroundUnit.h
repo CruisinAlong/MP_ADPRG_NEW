@@ -14,6 +14,7 @@ public:
     void initialize() override;
     void onRelease() override;
     void onActivate() override;
+	void update(sf::Time deltaTime) override; 
     AbstractPoolable* clone() override;
 
     void onCollisionEnter(AbstractGameObject* contact) override;
@@ -22,6 +23,8 @@ public:
 private:
     sf::Sprite* sprite;
     Collider* collider;
+    int nextId;
+    int id;
     const int SPAWN_RANGE = 300;
 };
 

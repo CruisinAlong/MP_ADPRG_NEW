@@ -17,8 +17,11 @@ bool Collider::hasCollisionWith(Collider* collider) {
 bool Collider::willCollide(Collider* another) {
 	sf::FloatRect A = this->getGlobalBounds();
 	sf::FloatRect B = another->getGlobalBounds();
-	return A.intersects(B);
+	bool collision = A.intersects(B);
+	return collision;
 }
+
+
 
 void Collider::addCollision(Collider* collider) {
 	this->collisions.insert(collider);
@@ -48,6 +51,10 @@ sf::FloatRect Collider::getGlobalBounds() {
 	return this->getOwner()->getGlobalTransform().transformRect(this->localBounds);
 }
 
+sf::FloatRect Collider::getLocalBounds() { 
+	return this->localBounds;
+}
+
 void Collider::clearCollisions() {
 	for (Collider* collider : this->collisions) {
 		collider->collisionExit(this->getOwner());
@@ -59,8 +66,4 @@ void Collider::clearCollisions() {
 
 void Collider::perform() {
 
-}
-
-sf::Sprite& Collider::getDebugSprite() {
-	return debugSprite;
 }

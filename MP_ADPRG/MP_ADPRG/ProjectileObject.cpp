@@ -22,9 +22,6 @@ void ProjectileObject::initialize(){
 	collider->setLocalBounds(sprite->getGlobalBounds());
 	collider->setCollisionListener(this);
 	this->attachComponent(collider);
-
-	std::cout << "BOUNDS: " << sprite->getGlobalBounds().left << ":" << sprite->getGlobalBounds().top << ":" << sprite->getGlobalBounds().width << ":" << sprite->getGlobalBounds().height << std::endl;
-	PhysicsManager::initialize("PhysicsManager", this);
 }
 void ProjectileObject::onRelease(){
 	PhysicsManager::getInstance()->untrackObject(this->collider);
