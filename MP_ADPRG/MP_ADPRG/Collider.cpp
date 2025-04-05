@@ -4,7 +4,14 @@
 #include <iostream>
 
 Collider::Collider(std::string name) : AbstractComponent(name, AbstractComponent::Physics) {
+	std::cout << "Collider created: " << name << std::endl;
 }
+
+Collider::~Collider() {
+	std::cout << "Collider destroyed: " << this->getName() << std::endl;
+	clearCollisions();
+}
+
 
 void Collider::setCollisionListener(CollisionListener* listener) {
 	this->listener = listener;

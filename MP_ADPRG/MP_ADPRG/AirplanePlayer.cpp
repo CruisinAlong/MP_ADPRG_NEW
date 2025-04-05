@@ -60,12 +60,6 @@ void AirplanePlayer::update(sf::Time deltaTime) {
 }
 
 void AirplanePlayer::onCollisionEnter(AbstractGameObject* contact) {
-	if (contact->getName().find("enemy") != std::string::npos) {
-		std::cout << "AirplanePlayer collided with enemyGroundUnit" << std::endl;
-	}
-	else if (contact->getName().find("enemyGroundUnit") != std::string::npos) {
-		std::cout << "AirplanePlayer collided with EnemyAirplane" << std::endl;
-	}
 }
 
 

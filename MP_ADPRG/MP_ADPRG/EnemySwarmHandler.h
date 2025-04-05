@@ -10,7 +10,7 @@ public:
 	void perform();
 private:
     GameObjectPool* enemyPool;
-    const float SPAWN_INTERVAL = 2.0f;
+    const float SPAWN_INTERVAL = 3.0f;
     float nextSpawnTime = 0.0f;
     float ticks = 0.0f;
     std::default_random_engine generator;

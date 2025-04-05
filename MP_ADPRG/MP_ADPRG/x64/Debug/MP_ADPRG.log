@@ -1,47 +1,13 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (SFML_ADPRG_PROJECT.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  EnemyAirplane.cpp
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyAirplane.h(25,26): warning C4244: 'initializing': conversion from 'float' to 'const int', possible loss of data
-  (compiling source file 'EnemyAirplane.cpp')
-  
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyAirplane.cpp(19,53): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyAirplane.cpp(19,53): warning C4244:         with
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyAirplane.cpp(19,53): warning C4244:         [
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyAirplane.cpp(19,53): warning C4244:             T=unsigned int
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyAirplane.cpp(19,53): warning C4244:         ]
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyAirplane.cpp(19,34): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyAirplane.cpp(19,34): warning C4244:         with
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyAirplane.cpp(19,34): warning C4244:         [
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyAirplane.cpp(19,34): warning C4244:             T=unsigned int
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyAirplane.cpp(19,34): warning C4244:         ]
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyAirplane.cpp(22,102): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyAirplane.cpp(22,39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyAirplane.cpp(23,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyAirplane.cpp(51,122): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyAirplane.cpp(51,39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  EnemyGroundSwarmHandler.cpp
-  EnemyGroundUnit.cpp
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyGroundUnit.cpp(14,56): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyGroundUnit.cpp(14,56): warning C4244:         with
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyGroundUnit.cpp(14,56): warning C4244:         [
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyGroundUnit.cpp(14,56): warning C4244:             T=unsigned int
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyGroundUnit.cpp(14,56): warning C4244:         ]
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyGroundUnit.cpp(14,37): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyGroundUnit.cpp(14,37): warning C4244:         with
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyGroundUnit.cpp(14,37): warning C4244:         [
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyGroundUnit.cpp(14,37): warning C4244:             T=unsigned int
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyGroundUnit.cpp(14,37): warning C4244:         ]
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyGroundUnit.cpp(16,101): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyGroundUnit.cpp(16,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyGroundUnit.cpp(17,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyGroundUnit.cpp(50,121): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyGroundUnit.cpp(50,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  EnemySwarmHandler.cpp
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\EnemyAirplane.h(25,26): warning C4244: 'initializing': conversion from 'float' to 'const int', possible loss of data
-  (compiling source file 'EnemySwarmHandler.cpp')
-  
-  GameScene.cpp
-  GameScreen.cpp
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\GameScreen.cpp(25,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\GameScreen.cpp(32,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Generating Code...
+  TitleScreen.cpp
+C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\TitleScreen.cpp(12,58): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\TitleScreen.cpp(12,58): warning C4244:         with
+C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\TitleScreen.cpp(12,58): warning C4244:         [
+C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\TitleScreen.cpp(12,58): warning C4244:             T=unsigned int
+C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\TitleScreen.cpp(12,58): warning C4244:         ]
+C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\TitleScreen.cpp(12,39): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\TitleScreen.cpp(12,39): warning C4244:         with
+C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\TitleScreen.cpp(12,39): warning C4244:         [
+C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\TitleScreen.cpp(12,39): warning C4244:             T=unsigned int
+C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\TitleScreen.cpp(12,39): warning C4244:         ]
   MP_ADPRG.vcxproj -> C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\x64\Debug\MP_ADPRG.exe

@@ -1,5 +1,6 @@
 #pragma once
 #include "AbstractGameObject.h"
+#include "Collider.h"
 #include <unordered_map>
 #include <iostream>
 

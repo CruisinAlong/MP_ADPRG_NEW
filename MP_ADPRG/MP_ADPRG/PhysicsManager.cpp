@@ -14,21 +14,27 @@ PhysicsManager* PhysicsManager::getInstance() {
 }
 
 void PhysicsManager::trackObject(Collider* object) {
-    if (object && object->getOwner()) {
-        std::cout << "Tracking object: " << object->getName() << std::endl;
-        this->trackedObjects.push_back(object);
+    if (object == nullptr) {
+        std::cerr << "Error: Attempted to track a null collider." << std::endl;
+        return;
     }
-    else {
-        std::cout << "Error: Attempted to track an invalid object or object with no owner." << std::endl;
+
+    if (object->getOwner() == nullptr) {
+        std::cerr << "Error: Collider has no owner." << std::endl;
+        return;
     }
+
+    std::cout << "Tracking object: " << object->getName() << std::endl;
+    this->trackedObjects.push_back(object);
 }
 
 
+
 void PhysicsManager::untrackObject(Collider* object) {
-    std::cout << "Scheduled for cleanup: " << object->getName() << std::endl;
+
     this->forCleaningObjects.push_back(object);
     this->CleanUpObjects();
-    std::cout << "Performing PhysicsManager cleanup." << std::endl;
+
     this->printTrackedObjects();
 }
 
@@ -44,8 +50,7 @@ void PhysicsManager::perform() {
                     {
                         this->trackedObjects[i]->addCollision(this->trackedObjects[j]);
                         this->trackedObjects[i]->collisionEnter(this->trackedObjects[j]->getOwner());
-                        std::cout << this->trackedObjects[i]->getName() << " collisionEnter with " 
-                                  << this->trackedObjects[j]->getName() << std::endl;
+
                     }
                     if (!this->trackedObjects[j]->hasCollisionWith(this->trackedObjects[i])) 
                     {
@@ -53,21 +58,16 @@ void PhysicsManager::perform() {
                         this->trackedObjects[j]->collisionEnter(this->trackedObjects[i]->getOwner());
                     }
                 } 
-                else
-                {
-
-                } {
+                else {
                     if (this->trackedObjects[i]->hasCollisionWith(this->trackedObjects[j])) {
                         this->trackedObjects[i]->collisionExit(this->trackedObjects[j]->getOwner());
                         this->trackedObjects[i]->removeCollision(this->trackedObjects[j]);
-                        std::cout << this->trackedObjects[i]->getName() << " collisionExit with " 
-                                  << this->trackedObjects[j]->getName() << std::endl;
+
                     }
                     if (this->trackedObjects[j]->hasCollisionWith(this->trackedObjects[i])) {
                         this->trackedObjects[j]->collisionExit(this->trackedObjects[i]->getOwner());
                         this->trackedObjects[j]->removeCollision(this->trackedObjects[i]);
-                        std::cout << this->trackedObjects[j]->getName() << " collisionExit with " 
-                                  << this->trackedObjects[i]->getName() << std::endl;
+
                     }
                 }
             }

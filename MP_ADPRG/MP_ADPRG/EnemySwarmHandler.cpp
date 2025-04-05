@@ -4,7 +4,7 @@
 #include "EnemyAirplane.h"
 #include <iostream>
 
-EnemySwarmHandler::EnemySwarmHandler(int numEnemies, std::string name, AbstractGameObject* parent) : AbstractComponent(name, Script), distribution(1.0f, 5.0f) {
+EnemySwarmHandler::EnemySwarmHandler(int numEnemies, std::string name, AbstractGameObject* parent) : AbstractComponent(name, Script), distribution(2.0f, 5.0f) {
     this->enemyPool = new GameObjectPool(
         ObjectPoolHolder::ENEMY_POOL_TAG,
         new EnemyAirplane("enemy"),

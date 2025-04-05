@@ -10,7 +10,7 @@ class Collider : public AbstractComponent
 public:
 
 	Collider(std::string name);
-
+	~Collider();
 	void setCollisionListener(CollisionListener* listener);
 
 

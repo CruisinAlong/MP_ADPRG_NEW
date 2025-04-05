@@ -141,12 +141,13 @@ void GameScreen::update(sf::Time deltaTime) {
 
 void GameScreen::endLevel() {
     std::cout << "Level ended." << std::endl;
-    // Pause the game
-    ApplicationManager::getInstance()->pauseApplication();
     // Overlay a screen here and PAUSE the game
     UIText* endLevelText = new UIText("EndLevelText");
     endLevelText->setText("Level Complete!");
     endLevelText->setPosition(320.0f, 240.0f); // Center of the screen
+    // Pause the game
+    ApplicationManager::getInstance()->pauseApplication();
+
     GameObjectManager::getInstance()->addObject(endLevelText);
 
 
