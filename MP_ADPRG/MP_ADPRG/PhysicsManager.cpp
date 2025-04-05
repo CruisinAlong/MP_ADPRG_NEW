@@ -27,10 +27,12 @@ void PhysicsManager::trackObject(Collider* object) {
 void PhysicsManager::untrackObject(Collider* object) {
     std::cout << "Scheduled for cleanup: " << object->getName() << std::endl;
     this->forCleaningObjects.push_back(object);
+    this->CleanUpObjects();
+    std::cout << "Performing PhysicsManager cleanup." << std::endl;
+    this->printTrackedObjects();
 }
 
 void PhysicsManager::perform() {
-
     for (int i = 0; i < this->trackedObjects.size(); i++) {
         for (int j = 0; j < this->trackedObjects.size(); j++) {
             if (this->trackedObjects[i]->getOwner()->isEnabled() &&
@@ -71,9 +73,7 @@ void PhysicsManager::perform() {
             }
         }
     }
-    this->CleanUpObjects();
-	std::cout << "Performing PhysicsManager cleanup." << std::endl;
-    this->printTrackedObjects();
+
 }
 
 void PhysicsManager::printTrackedObjects() {

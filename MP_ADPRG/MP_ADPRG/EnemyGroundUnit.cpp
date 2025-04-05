@@ -60,13 +60,16 @@ void EnemyGroundUnit::update(sf::Time deltaTime) {
 }
 
 void EnemyGroundUnit::onCollisionEnter(AbstractGameObject* contact) {
-    if (contact->getName().find("PlaneObject") != std::string::npos) {
-		std::cout << "Ground Unit collided with PlaneObject" << std::endl;
-		UIData* scoreData = UIManager::getInstance()->getUIData(UIManager::SCORE_UI_KEY);
+    if (!collisionProcessed && contact->getName().find("PlaneObject") != std::string::npos) {
+        std::cout << "Ground Unit collided with PlaneObject" << std::endl;
+        UIData* scoreData = UIManager::getInstance()->getUIData(UIManager::SCORE_UI_KEY);
         scoreData->putInt(UIManager::SCORE_UI_KEY, scoreData->getInt(UIManager::SCORE_UI_KEY, 0) - 100);
-		scoreData->refreshTextFromData("scoreText", UIManager::SCORE_UI_KEY, "Score: ");
+        scoreData->refreshTextFromData("scoreText", UIManager::SCORE_UI_KEY, "Score: ");
+        collisionProcessed = true; // Set the flag to true to indicate the collision has been processed
     }
 }
 
 void EnemyGroundUnit::onCollisionExit(AbstractGameObject* gameObject) {
+    collisionProcessed = false; // Reset the flag when the collision ends
 }
+

@@ -11,6 +11,11 @@ void AirplanePlayer::initialize()
 {
 	std::cout << "AirplanePlayer initialized" << std::endl;
 
+	if (PhysicsManager::getInstance() == nullptr) {
+		std::cout << "Creating PhysicsManager" << std::endl;
+		PhysicsManager::initialize("PhysicsManager", this);
+	}
+
 	this->transformable.setPosition(Game::WINDOW_WIDTH / 4, Game::WINDOW_HEIGHT - 30);
 
 	PlayerInputController* inputController = new PlayerInputController("MyPlayerInput");
@@ -44,8 +49,6 @@ void AirplanePlayer::initialize()
 	else {
 		std::cerr << "Error: PhysicsManager instance is not initialized." << std::endl;
 	}
-
-	checkPositions();
 }
 
 void AirplanePlayer::processInputs(sf::Event event) {
@@ -55,28 +58,6 @@ void AirplanePlayer::processInputs(sf::Event event) {
 void AirplanePlayer::update(sf::Time deltaTime) {
 	AbstractGameObject::update(deltaTime); 
 }
-
-void AirplanePlayer::checkPositions() {
-	// Get the position of the player
-	sf::Vector2f playerPosition = this->transformable.getPosition();
-
-	// Get the bounds of the collider
-	sf::FloatRect colliderBounds = this->collider->getGlobalBounds();
-
-	// Calculate the center position of the collider
-	sf::Vector2f colliderCenter(colliderBounds.left + colliderBounds.width / 2, colliderBounds.top + colliderBounds.height / 2);
-
-	// Compare the positions
-	if (playerPosition == colliderCenter) {
-		std::cout << "The positions match." << std::endl;
-	}
-	else {
-		std::cout << "The positions do not match." << std::endl;
-		std::cout << "Player Position: " << playerPosition.x << ", " << playerPosition.y << std::endl;
-		std::cout << "Collider Center: " << colliderCenter.x << ", " << colliderCenter.y << std::endl;
-	}
-}
-
 
 void AirplanePlayer::onCollisionEnter(AbstractGameObject* contact) {
 	if (contact->getName().find("enemy") != std::string::npos) {

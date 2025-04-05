@@ -23,6 +23,6 @@ private:
 	int counter = 0;
 
 	const int SPAWN_RANGE = 300.f;
-
+	bool collisionProcessed = false;
 	Collider* collider;
 };

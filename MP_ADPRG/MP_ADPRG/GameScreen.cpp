@@ -13,10 +13,7 @@ void GameScreen::initialize() {
     sf::Texture* btnNormalTexture = TextureManager::getInstance()->getTexture("btn_normal");
     sf::Texture* btnPressedTexture = TextureManager::getInstance()->getTexture("btn_pressed");
 
-    if (PhysicsManager::getInstance() == nullptr) {
-        std::cout << "Creating PhysicsManager" << std::endl;
-        PhysicsManager::initialize("PhysicsManager", this);
-    }
+
 
     bgObject = new BGObject("bgObject");
     GameObjectManager::getInstance()->addObject(bgObject);

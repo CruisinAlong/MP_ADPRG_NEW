@@ -10,10 +10,14 @@ EnemyAirplane::EnemyAirplane(std::string name) : AbstractPoolable(name), Collisi
 }
 
 void EnemyAirplane::initialize() {
+
+
+
 	this->sprite = new sf::Sprite();
 	sprite->setTexture(*TextureManager::getInstance()->getTexture("avenger"));
 	sf::Vector2u textureSize = sprite->getTexture()->getSize();
 	sprite->setOrigin(textureSize.x / 2, textureSize.y / 2);
+
 
 	this->setPosition(Game::WINDOW_WIDTH - static_cast<int>(textureSize.x) / 2, Game::WINDOW_HEIGHT / 2 - static_cast<int>(textureSize.y) / 2);
 	this->getTransformable()->move(rand() % SPAWN_RANGE, 0);
@@ -52,16 +56,16 @@ AbstractPoolable* EnemyAirplane::clone() {
 }
 
 void EnemyAirplane::onCollisionEnter(AbstractGameObject* contact) {
-	if (contact->getName().find("PlaneObject") != std::string::npos) {
+	if (!collisionProcessed && contact->getName().find("PlaneObject") != std::string::npos) {
 		std::cout << "EnemyAirplane collided with PlaneObject" << std::endl;
 		UIData* scoreData = UIManager::getInstance()->getUIData(UIManager::SCORE_UI_KEY);
 		scoreData->putInt(UIManager::SCORE_UI_KEY, scoreData->getInt(UIManager::SCORE_UI_KEY, 0) + 100);
 		scoreData->refreshTextFromData("scoreText", UIManager::SCORE_UI_KEY, "Score: ");
+		collisionProcessed = true; // Set the flag to true to indicate the collision has been processed
 	}
 }
 
-
-
 void EnemyAirplane::onCollisionExit(AbstractGameObject* gameObject) {
-
+	collisionProcessed = false; // Reset the flag when the collision ends
 }
+

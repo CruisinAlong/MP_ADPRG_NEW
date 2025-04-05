@@ -16,7 +16,6 @@ AbstractGameObject::~AbstractGameObject()
     }
 	for (int i = 0; i < this->componentList.size(); i++) {
         if (this->componentList[i] != nullptr) {
-            std::cout << "Deleting component: " << this->componentList[i]->getName() << std::endl; // Debug log
             delete this->componentList[i];
         }
 	}
@@ -75,6 +74,7 @@ void AbstractGameObject::setPosition(float x, float y)
 void AbstractGameObject::update(sf::Time deltaTime) {
     std::vector<AbstractComponent*> componentList =
         this->getComponentsOfType(AbstractComponent::ComponentType::Script);
+
     for (int j = 0; j < componentList.size(); j++) {
         componentList[j]->setDeltaTime(deltaTime);
         componentList[j]->perform();
@@ -89,7 +89,7 @@ void AbstractGameObject::update(sf::Time deltaTime) {
 void AbstractGameObject::attachComponent(AbstractComponent* component) {
     this->componentList.push_back(component);
     component->attachOwner(this);
-    std::cout << "Attached component: " << component->getName() << " to game object: " << this->name << std::endl; // Debug log
+    std::cout << "Attached component: " << component->getName() << " of type " << component->getType() << " to game object: " << this->name << std::endl; // Debug log
 }
 
 void AbstractGameObject::detachComponent(AbstractComponent* component) {

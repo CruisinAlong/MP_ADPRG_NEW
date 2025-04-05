@@ -26,6 +26,7 @@ private:
     int nextId;
     int id;
     const int SPAWN_RANGE = 300;
+    bool collisionProcessed = false;
 };
 
 
