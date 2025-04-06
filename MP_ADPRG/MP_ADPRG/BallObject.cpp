@@ -2,9 +2,10 @@
 #include "TextureManager.h"
 #include "Game.h"
 #include "Renderer.h"
+#include "BallPlayer.h"
 #include "EnemyBehavior.h"
 
-BallObject::BallObject(std::string name) : AbstractPoolable(name), CollisionListener() {
+BallObject::BallObject(std::string name) : AbstractPoolable(name), CollisionListener(), collisionHandled(false) {
 }
 
 void BallObject::initialize() {
@@ -23,7 +24,7 @@ void BallObject::initialize() {
 
     EnemyBehavior* behavior = new EnemyBehavior("BallBehavior");
     this->attachComponent(behavior);
-    behavior->configure(EnemyBehavior::Static);
+    behavior->configure(EnemyBehavior::SlowForward);
     EnemyInputController* inputController = new EnemyInputController("BallInputController");
     this->attachComponent(inputController);
 
@@ -47,7 +48,10 @@ void BallObject::onActivate() {
     PhysicsManager::getInstance()->trackObject(this->collider);
 
     this->setPosition(Game::WINDOW_WIDTH + static_cast<int>(sprite->getTexture()->getSize().x) / 2, Game::WINDOW_HEIGHT - static_cast<int>(sprite->getTexture()->getSize().y) / 2);
+    collisionHandled = false;
 }
+
+
 
 AbstractPoolable* BallObject::clone() {
     AbstractPoolable* copyObj = new BallObject(this->name);
@@ -55,13 +59,36 @@ AbstractPoolable* BallObject::clone() {
 }
 
 void BallObject::onCollisionEnter(AbstractGameObject* contact) {
-    if (contact->getName().find("PlaneObject") != std::string::npos) {
-        std::cout << "BallObject collided with PlaneObject" << std::endl;
-        UIData* scoreData = UIManager::getInstance()->getUIData(UIManager::SCORE_UI_KEY);
-        scoreData->putInt(UIManager::SCORE_UI_KEY, scoreData->getInt(UIManager::SCORE_UI_KEY, 0) + 100);
-        scoreData->refreshTextFromData("scoreText", UIManager::SCORE_UI_KEY, "Score: ");
+    if (collisionHandled) {
+        return;
+    }
+
+    if (contact->getName().find("PlayerObject") != std::string::npos) {
+        std::cout << "BallObject collided with PlayerObject" << std::endl;
+        BallPlayer* player = dynamic_cast<BallPlayer*>(contact);
+        if (player != nullptr) {
+
+            std::cout << "BallObject set under PlayerObject at position: " << this->getTransformable()->getPosition().x << ", " << this->getTransformable()->getPosition().y << std::endl;
+            // Configure the BallObject to stop moving
+            EnemyBehavior* behavior = dynamic_cast<EnemyBehavior*>(this->findComponentByName("BallBehavior"));
+            if (behavior != nullptr) {
+                behavior->configure(EnemyBehavior::NonMoving);
+            }
+
+            UIData* scoreData = UIManager::getInstance()->getUIData(UIManager::SCORE_UI_KEY);
+            scoreData->putInt(UIManager::SCORE_UI_KEY, scoreData->getInt(UIManager::SCORE_UI_KEY, 0) + 100);
+            scoreData->refreshTextFromData("scoreText", UIManager::SCORE_UI_KEY, "Score: ");
+
+            collisionHandled = true; 
+        }
     }
 }
 
 void BallObject::onCollisionExit(AbstractGameObject* gameObject) {
+    EnemyBehavior* behavior = dynamic_cast<EnemyBehavior*>(this->findComponentByName("BallBehavior"));
+    behavior->configure(EnemyBehavior::SlowForward);
+}
+
+sf::Sprite* BallObject::getSprite() const {
+    return sprite;
 }

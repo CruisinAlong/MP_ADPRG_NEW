@@ -10,6 +10,7 @@ C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\ApplicationM
 C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BallMovement.cpp;C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\x64\Debug\BallMovement.obj
 C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BallObject.cpp;C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\x64\Debug\BallObject.obj
 C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BallObjectHandler.cpp;C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\x64\Debug\BallObjectHandler.obj
+C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BallPlayer.cpp;C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\x64\Debug\BallPlayer.obj
 C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BallScene.cpp;C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\x64\Debug\BallScene.obj
 C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BallScreen.cpp;C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\x64\Debug\BallScreen.obj
 C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\BGInputController.cpp;C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\x64\Debug\BGInputController.obj
@@ -40,6 +41,7 @@ C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\MainMenuScen
 C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\MainMenuScreen.cpp;C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\x64\Debug\MainMenuScreen.obj
 C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\ObjectPoolHolder.cpp;C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\x64\Debug\ObjectPoolHolder.obj
 C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\PhysicsManager.cpp;C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\x64\Debug\PhysicsManager.obj
+C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\PlayerBallMovement.cpp;C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\x64\Debug\PlayerBallMovement.obj
 C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\PlayerInputController.cpp;C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\x64\Debug\PlayerInputController.obj
 C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\PlayerMovement.cpp;C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\x64\Debug\PlayerMovement.obj
 C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\ProjectileMovement.cpp;C:\Users\ASUS\Documents\GitHub\MP_ADPRG\MP_ADPRG_\MP_ADPRG\MP_ADPRG\x64\Debug\ProjectileMovement.obj

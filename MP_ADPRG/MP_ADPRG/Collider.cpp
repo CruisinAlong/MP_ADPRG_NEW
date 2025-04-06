@@ -8,8 +8,6 @@ Collider::Collider(std::string name) : AbstractComponent(name, AbstractComponent
 }
 
 Collider::~Collider() {
-	std::cout << "Collider destroyed: " << this->getName() << std::endl;
-	clearCollisions();
 }
 
 
@@ -35,7 +33,9 @@ void Collider::addCollision(Collider* collider) {
 }
 
 void Collider::removeCollision(Collider* collider) {
-	this->collisions.erase(collider);
+	if (collider) {
+		this->collisions.erase(collider);
+	}
 }
 
 void Collider::setLocalBounds(sf::FloatRect localBounds) {
@@ -49,8 +49,11 @@ void Collider::collisionEnter(AbstractGameObject* gameObjects) {
 }
 
 void Collider::collisionExit(AbstractGameObject* gameObjects) {
-	if (this->listener) {
-		this->listener->onCollisionExit(gameObjects);
+	if (gameObjects) {
+
+		if (this->listener) {
+			this->listener->onCollisionExit(gameObjects);
+		}
 	}
 }
 
@@ -63,13 +66,38 @@ sf::FloatRect Collider::getLocalBounds() {
 }
 
 void Collider::clearCollisions() {
-	for (Collider* collider : this->collisions) {
-		collider->collisionExit(this->getOwner());
-		this->collisionExit(collider->getOwner());
-		collider->removeCollision(this);	
+
+
+	if (!this->collisions.empty()) {
+		for (Collider* collider : this->collisions) {
+			if (collider) {
+
+				if (this->getOwner()) {
+					collider->collisionExit(this->getOwner());
+				}
+				else {
+
+				}
+				if (collider->getOwner()) {
+					this->collisionExit(collider->getOwner());
+				}
+				else {
+
+				}
+				collider->removeCollision(this);
+			}
+			else {
+
+			}
+		}
+		this->collisions.clear();
+
 	}
-	collisions.clear();
+	else {
+
+	}
 }
+
 
 void Collider::perform() {
 

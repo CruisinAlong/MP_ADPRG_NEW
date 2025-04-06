@@ -15,7 +15,7 @@ private:
     BGInputController* inputController = nullptr; 
     bool moving = false;
     float distanceTraveled = 0.0f;
-    const float LEVEL_END_DISTANCE = 10.0f; 
+    const float LEVEL_END_DISTANCE = 100.0f; 
     bool levelFinished = false;
 };
 

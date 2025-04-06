@@ -20,8 +20,11 @@ public:
     void onCollisionExit(AbstractGameObject* gameObject) override;
     AbstractPoolable* clone() override;
     bool isMoving;
+    sf::Sprite* getSprite() const;
+
 private:
     sf::Sprite* sprite;
     Collider* collider; 
+    bool collisionHandled;
 
 };

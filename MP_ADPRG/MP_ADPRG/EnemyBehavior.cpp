@@ -46,6 +46,9 @@ void EnemyBehavior::perform() {
             transformable->move(-SPEED_MULTIPLIER * deltaTime.asSeconds(), 0);
         }
         break;
+    case NonMoving:
+        // Do nothing, the enemy will stop moving
+        break;
     }
 }
 

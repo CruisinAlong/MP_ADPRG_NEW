@@ -4,7 +4,7 @@
 
 class EnemyBehavior : public AbstractComponent {
 public:
-	enum EnemyMovementType { Static = 0, SlowForward = 1 };
+	enum EnemyMovementType { Static = 0, SlowForward = 1, NonMoving = 2, BallRandom = 3 };
 
 	EnemyBehavior(std::string name);
 	void perform() override;

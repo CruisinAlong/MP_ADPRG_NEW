@@ -53,4 +53,5 @@ bool PlayerInputController::isRight() {
 }
 bool PlayerInputController::isJump() {
 	return this->jump;
+
 }

@@ -93,24 +93,11 @@ void GameObjectManager::deleteAllObjectsInScene() {
 	std::cout << "Deleting all objects in scene" << std::endl;
 	for (auto& gameObject : mGameObjectList) {
 		std::cout << "Deleting object: " << gameObject->getName() << std::endl;
-		Collider* collider = dynamic_cast<Collider*>(gameObject);
-		if (collider) {
-			collider->clearCollisions();
-		}
 		delete gameObject;
-		gameObject = nullptr; // Set pointer to nullptr after deletion
 	}
 	mGameObjectList.clear();
 	mGameObjectList.shrink_to_fit();
 	mGameObject.clear();
 	std::cout << "All objects deleted in scene" << std::endl;
-
-	// Check for remaining colliders
-	for (auto& gameObject : mGameObjectList) {
-		Collider* collider = dynamic_cast<Collider*>(gameObject);
-		if (collider) {
-			std::cerr << "Warning: Collider not properly deleted: " << collider->getName() << std::endl;
-		}
-	}
 }
 

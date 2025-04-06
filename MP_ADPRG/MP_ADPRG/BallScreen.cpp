@@ -6,17 +6,13 @@
 #include "BGObject.h"
 #include "AirplanePlayer.h"
 #include "BallObjectHandler.h"
+#include "BallPlayer.h"
 #include <iostream>
 
 BallScreen::BallScreen(std::string name) : AbstractGameObject(name), ButtonListener() {}
 
 void BallScreen::initialize() {
     std::cout << "BallScreen initialize called for: " << this->getName() << std::endl;
-
-    if (PhysicsManager::getInstance() == nullptr) {
-        std::cout << "Creating PhysicsManager" << std::endl;
-        PhysicsManager::initialize("PhysicsManager", this);
-    }
 
     // Load background
     std::cout << "Creating BGObject" << std::endl;
@@ -26,9 +22,10 @@ void BallScreen::initialize() {
 
     // Load player
     std::cout << "Creating PlayerObject" << std::endl;
-    player = new AirplanePlayer("PlayerObject");
+    BallPlayer* player = new BallPlayer("PlayerObject"); 
     GameObjectManager::getInstance()->addObject(player);
     std::cout << "PlayerObject created and added to GameObjectManager" << std::endl;
+
 
     // Initialize ball handler
     srand(time(nullptr));

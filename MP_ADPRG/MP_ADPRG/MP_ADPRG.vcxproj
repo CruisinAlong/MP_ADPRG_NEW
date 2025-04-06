@@ -142,6 +142,7 @@
     <ClCompile Include="BallMovement.cpp" />
     <ClCompile Include="BallObject.cpp" />
     <ClCompile Include="BallObjectHandler.cpp" />
+    <ClCompile Include="BallPlayer.cpp" />
     <ClCompile Include="BallScene.cpp" />
     <ClCompile Include="BallScreen.cpp" />
     <ClCompile Include="BGInputController.cpp" />
@@ -172,6 +173,7 @@
     <ClCompile Include="MainMenuScreen.cpp" />
     <ClCompile Include="ObjectPoolHolder.cpp" />
     <ClCompile Include="PhysicsManager.cpp" />
+    <ClCompile Include="PlayerBallMovement.cpp" />
     <ClCompile Include="PlayerInputController.cpp" />
     <ClCompile Include="PlayerMovement.cpp" />
     <ClCompile Include="ProjectileMovement.cpp" />
@@ -202,6 +204,7 @@
     <ClInclude Include="BallMovement.h" />
     <ClInclude Include="BallObject.h" />
     <ClInclude Include="BallObjectHandler.h" />
+    <ClInclude Include="BallPlayer.h" />
     <ClInclude Include="BallScene.h" />
     <ClInclude Include="BallScreen.h" />
     <ClInclude Include="BGInputController.h" />
@@ -231,6 +234,7 @@
     <ClInclude Include="MainMenuScreen.h" />
     <ClInclude Include="ObjectPoolHolder.h" />
     <ClInclude Include="PhysicsManager.h" />
+    <ClInclude Include="PlayerBallMovement.h" />
     <ClInclude Include="PlayerInputController.h" />
     <ClInclude Include="PlayerMovement.h" />
     <ClInclude Include="ProjectileMovement.h" />

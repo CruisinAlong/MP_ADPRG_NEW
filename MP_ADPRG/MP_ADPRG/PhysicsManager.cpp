@@ -3,11 +3,18 @@
 
 PhysicsManager* PhysicsManager::sharedInstance = nullptr;
 
+
 void PhysicsManager::initialize(std::string name, AbstractGameObject* parent) {
-    sharedInstance = new PhysicsManager(name);
-    parent->attachComponent(sharedInstance);
-    std::cout << "PhysicsManager initialized." << std::endl;
+    if (sharedInstance == nullptr) {
+        sharedInstance = new PhysicsManager(name);
+        parent->attachComponent(sharedInstance);
+        std::cout << "PhysicsManager initialized." << std::endl;
+    }
+    else {
+        std::cout << "PhysicsManager already initialized." << std::endl;
+    }
 }
+
 
 PhysicsManager* PhysicsManager::getInstance() {
     return sharedInstance;
@@ -23,10 +30,14 @@ void PhysicsManager::trackObject(Collider* object) {
         std::cerr << "Error: Collider has no owner." << std::endl;
         return;
     }
+    trackedObjects.reserve(1);
 
-    std::cout << "Tracking object: " << object->getName() << std::endl;
+
     this->trackedObjects.push_back(object);
+
+
 }
+
 
 
 

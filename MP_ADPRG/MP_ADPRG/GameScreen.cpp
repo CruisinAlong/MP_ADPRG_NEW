@@ -13,8 +13,6 @@ void GameScreen::initialize() {
     sf::Texture* btnNormalTexture = TextureManager::getInstance()->getTexture("btn_normal");
     sf::Texture* btnPressedTexture = TextureManager::getInstance()->getTexture("btn_pressed");
 
-
-
     bgObject = new BGObject("bgObject");
     GameObjectManager::getInstance()->addObject(bgObject);
 
