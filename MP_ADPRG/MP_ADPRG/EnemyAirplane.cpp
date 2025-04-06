@@ -11,17 +11,13 @@ EnemyAirplane::EnemyAirplane(std::string name) : AbstractPoolable(name), Collisi
 
 void EnemyAirplane::initialize() {
 
-
-
 	this->sprite = new sf::Sprite();
 	sprite->setTexture(*TextureManager::getInstance()->getTexture("avenger"));
 	sf::Vector2u textureSize = sprite->getTexture()->getSize();
 	sprite->setOrigin(textureSize.x / 2, textureSize.y / 2);
-
-
-	this->setPosition(Game::WINDOW_WIDTH - static_cast<int>(textureSize.x) / 2, Game::WINDOW_HEIGHT / 2 - static_cast<int>(textureSize.y) / 2);
+	this->setPosition(Game::WINDOW_WIDTH - static_cast<int>(textureSize.x) / 2, Game::WINDOW_HEIGHT - static_cast<int>(textureSize.y) - 50);
 	this->getTransformable()->move(rand() % SPAWN_RANGE, 0);
-	this->getTransformable()->setRotation(270);
+
 
 	Renderer* renderer = new Renderer("EnemySprite");
 	renderer->assignDrawable(sprite);
@@ -48,7 +44,7 @@ void EnemyAirplane::onActivate() {
 
 	PhysicsManager::getInstance()->trackObject(this->collider);
 
-	this->setPosition(Game::WINDOW_WIDTH + static_cast<int>(sprite->getTexture()->getSize().x) / 2, Game::WINDOW_HEIGHT / 2 - static_cast<int>(sprite->getTexture()->getSize().y) / 2);
+	this->setPosition(Game::WINDOW_WIDTH + static_cast<int>(sprite->getTexture()->getSize().x) / 2, Game::WINDOW_HEIGHT - static_cast<int>(sprite->getTexture()->getSize().y) - 50);
 }
 AbstractPoolable* EnemyAirplane::clone() {
 	AbstractPoolable* copyObj = new EnemyAirplane(this->name);

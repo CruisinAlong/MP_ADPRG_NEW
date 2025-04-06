@@ -8,6 +8,10 @@ const std::string ObjectPoolHolder::GROUND_POOL_TAG = "GroundPool";
 
 const std::string ObjectPoolHolder::BALL_POOL_TAG = "BallPool";
 
+const std::string ObjectPoolHolder::MONKEY_POOL_TAG = "MonkeyPool";
+
+const std::string ObjectPoolHolder::SLOW_FORWARD_POOL_TAG = "SlowForwardPool";
+
 ObjectPoolHolder* ObjectPoolHolder::sharedInstance = nullptr;
 
 ObjectPoolHolder* ObjectPoolHolder::getInstance() {

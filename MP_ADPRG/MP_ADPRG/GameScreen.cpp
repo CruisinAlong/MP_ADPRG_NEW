@@ -2,10 +2,13 @@
 #include "GameScreen.h"
 #include "TextureManager.h"
 #include "GameObjectManager.h"
+#include "AbstractGameObject.h"
+#include "ResultsScreen.h"
+#include "SoundManager.h"
 #include <iostream>
 #include <string>
 
-GameScreen::GameScreen(std::string name) : AbstractGameObject(name), ButtonListener(), showConfirmationPopup(false) {}
+GameScreen::GameScreen(std::string name) : AbstractGameObject(name), ButtonListener(), showConfirmationPopup(false), endLevelLoaded(false) {}
 
 void GameScreen::initialize() {
     std::cout << "GameScreen initialize called for: " << this->getName() << std::endl;
@@ -17,8 +20,13 @@ void GameScreen::initialize() {
     GameObjectManager::getInstance()->addObject(bgObject);
 
     std::cout << "Creating PlaneObject" << std::endl;
-    planeObject = new AirplanePlayer("PlaneObject");
+    AirplanePlayer* planeObject = new AirplanePlayer("PlaneObject");
+    if (PhysicsManager::getInstance() == nullptr) {
+        PhysicsManager::initialize("PhysicsManager", planeObject);
+    }
     GameObjectManager::getInstance()->addObject(planeObject);
+
+
 
     srand(time(nullptr));
     std::cout << "Creating EnemiesManager" << std::endl;
@@ -33,12 +41,6 @@ void GameScreen::initialize() {
     EnemyGroundSwarmHandler* swarmGroundHandler = new EnemyGroundSwarmHandler(5, "GroundSwarmHandler", enemiesGroundManager);
     enemiesGroundManager->attachComponent(swarmGroundHandler);
     GameObjectManager::getInstance()->addObject(enemiesGroundManager);
-
-
-    std::cout << "Creating enemyPool" << std::endl;
-    enemyPool = new GameObjectPool(ObjectPoolHolder::PROJECTILE_POOL_TAG, new ProjectileObject("projectile"), 10, nullptr);
-    enemyPool->initialize();
-    ObjectPoolHolder::getInstance()->registerObjectPool(enemyPool);
 
     std::cout << "Creating HUD" << std::endl;
     hud = new HUD("HUD");
@@ -83,7 +85,7 @@ void GameScreen::initialize() {
     GameObjectManager::getInstance()->addObject(mainMenu);
     mainMenu->setEnabled(false);
 
-    UIText* scoreText = new UIText("scoreText");
+    scoreText = new UIText("scoreText");
     GameObjectManager::getInstance()->addObject(scoreText);
     scoreText->setPosition(50.0f, 10.0f);
     scoreText->setSize(20);
@@ -94,6 +96,7 @@ void GameScreen::initialize() {
     scoreData->putInt(UIManager::SCORE_UI_KEY, 0);
     scoreData->refreshTextFromData("scoreText", UIManager::SCORE_UI_KEY, "Score: ");
 
+    SoundManager::getInstance()->playMusic("Stage1");
 
 
     std::cout << "GameScreen initialization complete" << std::endl;
@@ -131,25 +134,36 @@ void GameScreen::update(sf::Time deltaTime) {
     BGMovement* bgMovement = dynamic_cast<BGMovement*>(bgObject->getComponentByName("BGMovement"));
     if (bgMovement && bgMovement->isLevelFinished()) {
         endLevel();
-        // Delay the level end to allow for any animations or transitions
-        sf::sleep(sf::seconds(5)); // Example delay of 2 seconds
-        startNextLevel();
+    }
+    // Update the end level timer
+    if (endLevelLoaded) {
+        endLevelTimer += deltaTime;
+        if (endLevelTimer >= endLevelDelay) {
+            startNextLevel();
+            endLevelLoaded = false; // Reset the flag
+            endLevelTimer = sf::Time::Zero; // Reset the timer
+        }
     }
 }
 
 void GameScreen::endLevel() {
     std::cout << "Level ended." << std::endl;
-    // Overlay a screen here and PAUSE the game
+
+    // Initialize end level text
     UIText* endLevelText = new UIText("EndLevelText");
+    GameObjectManager::getInstance()->addObject(endLevelText);
     endLevelText->setText("Level Complete!");
     endLevelText->setPosition(320.0f, 240.0f); // Center of the screen
-    // Pause the game
-    ApplicationManager::getInstance()->pauseApplication();
 
-    GameObjectManager::getInstance()->addObject(endLevelText);
+    if (scoreText) {
+        scoreText->setPosition(320.0f, 280.0f); // Position it right below endLevelText
+        scoreText->setSize(30); // Resize the text
+    }
 
-
+    // Set the flag to indicate end level objects are loaded
+    endLevelLoaded = true;
 }
+
 
 void GameScreen::startNextLevel() {
     std::cout << "Starting next level." << std::endl;

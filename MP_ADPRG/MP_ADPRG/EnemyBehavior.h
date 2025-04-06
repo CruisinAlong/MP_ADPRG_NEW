@@ -4,7 +4,7 @@
 
 class EnemyBehavior : public AbstractComponent {
 public:
-	enum EnemyMovementType { Static = 0, SlowForward = 1, NonMoving = 2, BallRandom = 3 };
+	enum EnemyMovementType { Static = 0, SlowForward = 1, NonMoving = 2, FastJump = 3 };
 
 	EnemyBehavior(std::string name);
 	void perform() override;
@@ -19,6 +19,8 @@ private:
 	EnemyBehavior::EnemyMovementType movementType = Static;
 	float ticks = 0.0f;
 	float delay = 0.0f;
+	float jumpDelay;
 	float forwardDuration = 0.0f;
 	EnemyInputController* inputController = nullptr; 
+	bool hasJumped = false;
 };

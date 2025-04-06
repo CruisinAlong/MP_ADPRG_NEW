@@ -11,6 +11,8 @@ public:
 	static const std::string GROUND_POOL_TAG;
 	static const std::string PROJECTILE_POOL_TAG;
 	static const std::string BALL_POOL_TAG;
+	static const std::string MONKEY_POOL_TAG;
+	static const std::string SLOW_FORWARD_POOL_TAG;
 	static ObjectPoolHolder* getInstance();
 
 	void registerObjectPool(GameObjectPool* pool);

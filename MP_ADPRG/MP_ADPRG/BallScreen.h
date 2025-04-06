@@ -24,12 +24,19 @@ class BallScreen : public AbstractGameObject, public ButtonListener {
 public:
     BallScreen(std::string name);
     void initialize() override;
+    void update(sf::Time deltaTime) override;
     void onButtonClick(UIButton* button) override;
     void onButtonReleased(UIButton* button) override;
 
 private:
+    void endLevel();
+    void startNextLevel();
+
     BGObject* bgObject;
-    AirplanePlayer* player;
     UIText* scoreText;
+    sf::Time endLevelTimer; // Timer for end level delay
+    const sf::Time endLevelDelay = sf::seconds(5); // Delay duration
+    bool endLevelLoaded = false;
+    AirplanePlayer* player;
     UIData* scoreData;
 };

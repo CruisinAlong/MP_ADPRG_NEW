@@ -1,4 +1,5 @@
 #include "GameObjectManager.h"
+#include "PhysicsManager.h"
 
 GameObjectManager* GameObjectManager::sharedInstance = nullptr;
 

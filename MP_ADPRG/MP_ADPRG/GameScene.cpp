@@ -25,5 +25,12 @@ void GameScene::onUnloadResources() {
 
 void GameScene::onUnloadObjects() {
     std::cout << "GameScene unloading objects." << std::endl;
+    SoundManager::getInstance()->stopMusic(); 
+    // Create an EmptyGameObject to serve as the new parent for the PhysicsManager
+    EmptyGameObject* emptyParent = new EmptyGameObject("EmptyParent");
+    GameObjectManager::getInstance()->addObject(emptyParent);
+
+    // Rebind the PhysicsManager to the new EmptyGameObject
+    PhysicsManager::getInstance()->rebindParent(emptyParent);
     GameObjectManager::getInstance()->deleteAllObjectsInScene();
 }

@@ -1,8 +1,9 @@
 #include "BGMovement.h"
 #include "BGObject.h"
+#include "Game.h"
 #include <iostream>
 
-BGMovement::BGMovement(std::string name) : AbstractComponent(name, Script) {    
+BGMovement::BGMovement(std::string name) : AbstractComponent(name, Script), LEVEL_END_DISTANCE(Game::WINDOW_WIDTH * 9) {    
 }
 
 void BGMovement::perform() {
@@ -40,8 +41,14 @@ void BGMovement::setInputController(BGInputController* inputController) {
     this->inputController = inputController;
 }
 
-bool BGMovement::isLevelFinished() const {
-    return levelFinished;
+bool BGMovement::isLevelFinished(){
+    if (levelFinished) {
+        // Reset distance traveled when the level is finished
+        distanceTraveled = 0.0f;
+        levelFinished = false;
+        return true;
+    }
+    return false;
 }
 
 

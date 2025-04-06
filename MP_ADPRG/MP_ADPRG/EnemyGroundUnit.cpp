@@ -9,7 +9,7 @@ EnemyGroundUnit::EnemyGroundUnit(std::string name) : AbstractPoolable(name), Col
 
 void EnemyGroundUnit::initialize() {
     this->sprite = new sf::Sprite();
-    sprite->setTexture(*TextureManager::getInstance()->getTexture("avenger"));
+   sprite->setTexture(*TextureManager::getInstance()->getTexture("pot"));
     sf::Vector2u textureSize = sprite->getTexture()->getSize();
     sprite->setOrigin(textureSize.x / 2, textureSize.y / 2);
 

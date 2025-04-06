@@ -11,6 +11,7 @@ public:
 	static std::string GAME_SCENE_NAME;
 	static std::string TITLE_SCENE_NAME;
 	static std::string BALL_SCENE_NAME;
+	static std::string MONKEY_SCENE_NAME;
 
 	static SceneManager* getInstance();
 	void registerScene(AbstractScene* scene);

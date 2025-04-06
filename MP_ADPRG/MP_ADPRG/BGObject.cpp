@@ -13,7 +13,7 @@ void BGObject::initialize() {
     sf::Vector2u textureSize = texture->getSize();
 
     // Calculate the number of sprites needed to cover the window width
-    int numSprites = (Game::WINDOW_WIDTH / textureSize.x) + 5;
+    int numSprites = (Game::WINDOW_WIDTH / textureSize.x) + 9;
 
     // Create and position the sprites
     for (int i = 0; i < numSprites; ++i) {

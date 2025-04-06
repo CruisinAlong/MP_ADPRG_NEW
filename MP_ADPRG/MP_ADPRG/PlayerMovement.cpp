@@ -6,7 +6,7 @@
 
 #include <iostream>
 
-PlayerMovement::PlayerMovement(std::string name) : AbstractComponent(name, Script), projectilePool(nullptr), isJumping(false), jumpSpeed(300.0f), gravity(500.0f), velocityY(0.0f), playerHeight(30.0f) { 
+PlayerMovement::PlayerMovement(std::string name) : AbstractComponent(name, Script), projectilePool(nullptr), isJumping(false), jumpSpeed(400.0f), gravity(400.0f), velocityY(0.0f), playerHeight(30.0f) { 
     std::cout << "PlayerMovement [" << name << "] created." << std::endl;
 }
 

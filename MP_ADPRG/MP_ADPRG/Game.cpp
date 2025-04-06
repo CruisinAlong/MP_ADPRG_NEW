@@ -4,18 +4,22 @@
 #include "TitleScene.h"
 #include "GameScene.h"
 #include "BallScene.h"
+#include "MonkeyLevelScene.h"
 
 Game::Game() : mWindow(sf::VideoMode(Game::WINDOW_WIDTH, Game::WINDOW_HEIGHT), "SFML Application") {
     std::cout << "Game constructor called" << std::endl;
     mWindow.setFramerateLimit(60);
     TextureManager::getInstance()->loadAll();
     FontManager::getInstance()->loadAll();
+    SoundManager::getInstance()->loadAll();
+
 
 
     SceneManager::getInstance()->registerScene(new TitleScene());
     SceneManager::getInstance()->registerScene(new MainMenuScene());
     SceneManager::getInstance()->registerScene(new GameScene());
     SceneManager::getInstance()->registerScene(new BallScene());
+    SceneManager::getInstance()->registerScene(new MonkeyLevelScene());
     SceneManager::getInstance()->loadScene("TitleScene");
 }
 

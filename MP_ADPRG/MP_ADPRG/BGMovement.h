@@ -8,14 +8,14 @@ public:
     void perform() override;
     void setInputController(BGInputController* inputController); 
     bool isMoving() const;
-    bool isLevelFinished() const;
+    bool isLevelFinished();
 
 private:
     const float SPEED = 50.f;
-    BGInputController* inputController = nullptr; 
-    bool moving = false;
-    float distanceTraveled = 0.0f;
-    const float LEVEL_END_DISTANCE = 100.0f; 
-    bool levelFinished = false;
+    float LEVEL_END_DISTANCE;
+    BGInputController* inputController = nullptr;
+    bool moving = false; 
+    float distanceTraveled = 0.0f; 
+    bool levelFinished = false; 
 };
 

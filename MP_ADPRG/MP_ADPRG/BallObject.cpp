@@ -11,7 +11,7 @@ BallObject::BallObject(std::string name) : AbstractPoolable(name), CollisionList
 void BallObject::initialize() {
 
     this->sprite = new sf::Sprite();
-    sprite->setTexture(*TextureManager::getInstance()->getTexture("avenger"));
+    sprite->setTexture(*TextureManager::getInstance()->getTexture("ball"));
     sf::Vector2u textureSize = sprite->getTexture()->getSize();
     sprite->setOrigin(textureSize.x / 2, textureSize.y / 2);
 
@@ -57,7 +57,7 @@ AbstractPoolable* BallObject::clone() {
     AbstractPoolable* copyObj = new BallObject(this->name);
     return copyObj;
 }
-
+//Collision is designed to get stuck under the player until the player jumps, in which case it will trigger onCollisionExit
 void BallObject::onCollisionEnter(AbstractGameObject* contact) {
     if (collisionHandled) {
         return;
@@ -83,7 +83,7 @@ void BallObject::onCollisionEnter(AbstractGameObject* contact) {
         }
     }
 }
-
+//Release the ball
 void BallObject::onCollisionExit(AbstractGameObject* gameObject) {
     EnemyBehavior* behavior = dynamic_cast<EnemyBehavior*>(this->findComponentByName("BallBehavior"));
     behavior->configure(EnemyBehavior::SlowForward);

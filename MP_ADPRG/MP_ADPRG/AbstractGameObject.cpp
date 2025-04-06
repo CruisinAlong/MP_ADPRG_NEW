@@ -94,9 +94,12 @@ void AbstractGameObject::attachComponent(AbstractComponent* component) {
 
 void AbstractGameObject::detachComponent(AbstractComponent* component) {
     int index = -1;
+    std::cout << "Detaching component: " << component->getName() << " from game object: " << this->name << std::endl; // Debug log
+
     for (int i = 0; i < this->componentList.size(); i++) {
         if (this->componentList[i] == component) {
             index = i;
+            std::cout << "Component found at index: " << index << std::endl; // Debug log
             this->componentList[i]->detachOwner();
             break;
         }
@@ -104,7 +107,10 @@ void AbstractGameObject::detachComponent(AbstractComponent* component) {
 
     if (index != -1) {
         this->componentList.erase(this->componentList.begin() + index);
-
+        std::cout << "Component successfully detached and removed from list." << std::endl; // Debug log
+    }
+    else {
+        std::cout << "Component not found in the list." << std::endl; // Debug log
     }
 }
 

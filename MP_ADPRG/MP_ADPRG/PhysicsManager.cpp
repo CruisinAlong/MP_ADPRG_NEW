@@ -3,21 +3,20 @@
 
 PhysicsManager* PhysicsManager::sharedInstance = nullptr;
 
-
-void PhysicsManager::initialize(std::string name, AbstractGameObject* parent) {
-    if (sharedInstance == nullptr) {
-        sharedInstance = new PhysicsManager(name);
-        parent->attachComponent(sharedInstance);
-        std::cout << "PhysicsManager initialized." << std::endl;
-    }
-    else {
-        std::cout << "PhysicsManager already initialized." << std::endl;
-    }
-}
-
-
 PhysicsManager* PhysicsManager::getInstance() {
     return sharedInstance;
+}
+
+void PhysicsManager::initialize(std::string name, AbstractGameObject* parent) {
+        sharedInstance = new PhysicsManager(name);
+        parent->attachComponent(sharedInstance);
+		std::cout << "PhysicsManager initialized with parent object: " << parent->getName() << std::endl;
+}
+
+void PhysicsManager::rebindParent(AbstractGameObject* newParent) {
+    if (this->owner != nullptr) {
+        this->owner->detachComponent(this); // Detach from current parent
+    }
 }
 
 void PhysicsManager::trackObject(Collider* object) {
@@ -30,12 +29,7 @@ void PhysicsManager::trackObject(Collider* object) {
         std::cerr << "Error: Collider has no owner." << std::endl;
         return;
     }
-    trackedObjects.reserve(1);
-
-
     this->trackedObjects.push_back(object);
-
-
 }
 
 
@@ -51,10 +45,11 @@ void PhysicsManager::untrackObject(Collider* object) {
 
 void PhysicsManager::perform() {
     for (int i = 0; i < this->trackedObjects.size(); i++) {
+
         for (int j = 0; j < this->trackedObjects.size(); j++) {
+
             if (this->trackedObjects[i]->getOwner()->isEnabled() &&
                 this->trackedObjects[j]->getOwner()->isEnabled()) {
-
                 if (this->trackedObjects[i]->willCollide(this->trackedObjects[j])) {
 
                     if (!this->trackedObjects[i]->hasCollisionWith(this->trackedObjects[j])) 

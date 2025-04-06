@@ -10,18 +10,10 @@ AirplanePlayer::AirplanePlayer(std::string name) : AbstractGameObject(name), Col
 void AirplanePlayer::initialize()
 {
 	std::cout << "AirplanePlayer initialized" << std::endl;
-
-	if (PhysicsManager::getInstance() == nullptr) {
-		std::cout << "Creating PhysicsManager" << std::endl;
-		PhysicsManager::initialize("PhysicsManager", this);
-	}
-
 	this->transformable.setPosition(Game::WINDOW_WIDTH / 4, Game::WINDOW_HEIGHT - 30);
 
 	PlayerInputController* inputController = new PlayerInputController("MyPlayerInput");
 	this->attachComponent(inputController);
-
-
 
 	PlayerMovement* movement = new PlayerMovement("MyMovement");
 	this->attachComponent(movement);

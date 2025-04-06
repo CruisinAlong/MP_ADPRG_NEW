@@ -44,6 +44,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <EnableASAN>false</EnableASAN>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -110,7 +111,8 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\SFML-2.5.1\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>freetype.lib;winmm.lib;opengl32.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>freetype.lib;winmm.lib;opengl32.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;sfml-audio-s-d.lib;flac.lib;ogg.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;openal32.lib;
+;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -160,6 +162,8 @@
     <ClCompile Include="EnemyInputController.cpp" />
     <ClCompile Include="EnemySwarmHandler.cpp" />
     <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="FastJumpingEnemy.cpp" />
+    <ClCompile Include="FastJumpingEnemySwarmHandler.cpp" />
     <ClCompile Include="FontManager.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameObjectManager.cpp" />
@@ -171,6 +175,8 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MainMenuScene.cpp" />
     <ClCompile Include="MainMenuScreen.cpp" />
+    <ClCompile Include="MonkeyLevelScene.cpp" />
+    <ClCompile Include="MonkeyLevelScreen.cpp" />
     <ClCompile Include="ObjectPoolHolder.cpp" />
     <ClCompile Include="PhysicsManager.cpp" />
     <ClCompile Include="PlayerBallMovement.cpp" />
@@ -180,7 +186,11 @@
     <ClCompile Include="ProjectileObject.cpp" />
     <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="RendererFactory.cpp" />
+    <ClCompile Include="ResultsScreen.cpp" />
     <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="SlowForwardEnemy.cpp" />
+    <ClCompile Include="SlowForwardEnemySwarmHandler.cpp" />
+    <ClCompile Include="SoundManager.cpp" />
     <ClCompile Include="SpriteRenderer.cpp" />
     <ClCompile Include="TextureManager.cpp" />
     <ClCompile Include="TitleScene.cpp" />
@@ -222,6 +232,8 @@
     <ClInclude Include="EnemyInputController.h" />
     <ClInclude Include="EnemySwarmHandler.h" />
     <ClInclude Include="Entity.h" />
+    <ClInclude Include="FastJumpingEnemy.h" />
+    <ClInclude Include="FastJumpingEnemySwarmHandler.h" />
     <ClInclude Include="FontManager.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameObjectManager.h" />
@@ -232,6 +244,8 @@
     <ClInclude Include="HUD.h" />
     <ClInclude Include="MainMenuScene.h" />
     <ClInclude Include="MainMenuScreen.h" />
+    <ClInclude Include="MonkeyLevelScene.h" />
+    <ClInclude Include="MonkeyLevelScreen.h" />
     <ClInclude Include="ObjectPoolHolder.h" />
     <ClInclude Include="PhysicsManager.h" />
     <ClInclude Include="PlayerBallMovement.h" />
@@ -242,7 +256,11 @@
     <ClInclude Include="Reader.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="RendererFactory.h" />
+    <ClInclude Include="ResultsScreen.h" />
     <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="SlowForwardEnemy.h" />
+    <ClInclude Include="SlowForwardEnemySwarmHandler.h" />
+    <ClInclude Include="SoundManager.h" />
     <ClInclude Include="SpriteRenderer.h" />
     <ClInclude Include="TextureManager.h" />
     <ClInclude Include="TitleScene.h" />

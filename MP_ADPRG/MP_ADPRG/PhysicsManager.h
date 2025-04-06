@@ -17,6 +17,7 @@ public:
 	void untrackObject(Collider* object);
 	void perform();
 	void printTrackedObjects(); 
+	void rebindParent(AbstractGameObject* newParent); 
 private:
 	PhysicsManager(std::string name) : AbstractComponent(name, Script) {};
 	PhysicsManager(PhysicsManager const&) : AbstractComponent(name, Script) {};

@@ -47,6 +47,9 @@ private:
     UIText* noButtonText;
     BGObject* bgObject;
     bool showConfirmationPopup;
+    bool endLevelLoaded;
+    sf::Time endLevelTimer; 
+    const sf::Time endLevelDelay = sf::seconds(5);
 
 
 };

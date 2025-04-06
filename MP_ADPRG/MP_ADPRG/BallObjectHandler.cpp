@@ -6,7 +6,7 @@
 #include <iostream>
 
 BallObjectHandler::BallObjectHandler(int numBalls, std::string name, AbstractGameObject* parent)
-    : AbstractComponent(name, Script), distribution(1.0f, 5.0f) { // Random delay between 1 and 5 seconds
+    : AbstractComponent(name, Script), distribution(1.0f, 5.0f) { 
     this->ballPool = new GameObjectPool(
         ObjectPoolHolder::BALL_POOL_TAG,
         new BallObject("ball"),

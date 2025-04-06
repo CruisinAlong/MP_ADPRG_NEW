@@ -19,6 +19,7 @@
 #include "SceneManager.h"
 #include "MainMenuScene.h"
 #include "PhysicsManager.h"
+#include "SoundManager.h"
 
 
 class Game {

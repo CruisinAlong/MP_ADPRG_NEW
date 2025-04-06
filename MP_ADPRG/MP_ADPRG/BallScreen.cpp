@@ -23,6 +23,10 @@ void BallScreen::initialize() {
     // Load player
     std::cout << "Creating PlayerObject" << std::endl;
     BallPlayer* player = new BallPlayer("PlayerObject"); 
+    EmptyGameObject* physicsParent = new EmptyGameObject("PhysicsParent");
+        std::cout << "Creating PhysicsManager" << std::endl;
+        PhysicsManager::initialize("PhysicsManager", this);
+    
     GameObjectManager::getInstance()->addObject(player);
     std::cout << "PlayerObject created and added to GameObjectManager" << std::endl;
 
@@ -38,7 +42,7 @@ void BallScreen::initialize() {
 
     // Initialize score text and score data
     std::cout << "Creating scoreText" << std::endl;
-    UIText* scoreText = new UIText("scoreText");
+    scoreText = new UIText("scoreText");
     GameObjectManager::getInstance()->addObject(scoreText);
     scoreText->setPosition(10.0f, 10.0f);
     scoreText->setSize(20);
@@ -51,6 +55,8 @@ void BallScreen::initialize() {
     scoreData->putInt(UIManager::SCORE_UI_KEY, 0);
     scoreData->refreshTextFromData("scoreText", UIManager::SCORE_UI_KEY, "Score: ");
     std::cout << "scoreData created and bound to scoreText" << std::endl;
+
+    SoundManager::getInstance()->playMusic("Stage2");
 }
 
 
@@ -62,4 +68,48 @@ void BallScreen::onButtonClick(UIButton* button) {
 void BallScreen::onButtonReleased(UIButton* button) {
     std::cout << button->getName() << " released" << std::endl;
     // Handle button release events if needed
+}
+
+
+void BallScreen::update(sf::Time deltaTime) {
+    AbstractGameObject::update(deltaTime);
+
+    // Check if the level should end
+    BGMovement* bgMovement = dynamic_cast<BGMovement*>(bgObject->getComponentByName("BGMovement"));
+    if (bgMovement && bgMovement->isLevelFinished()) {
+        endLevel();
+    }
+    // Update the end level timer
+    if (endLevelLoaded) {
+        endLevelTimer += deltaTime;
+        if (endLevelTimer >= endLevelDelay) {
+            startNextLevel();
+            endLevelLoaded = false; // Reset the flag
+            endLevelTimer = sf::Time::Zero; // Reset the timer
+        }
+    }
+}
+
+void BallScreen::endLevel() {
+    std::cout << "Level ended." << std::endl;
+
+    // Display end level text
+    UIText* endLevelText = new UIText("EndLevelText");
+    GameObjectManager::getInstance()->addObject(endLevelText);
+    endLevelText->setText("Level Complete!");
+    endLevelText->setPosition(320.0f, 240.0f); // Center of the screen
+
+    if (scoreText) {
+        scoreText->setPosition(320.0f, 280.0f); // Position it right below endLevelText
+        scoreText->setSize(30); // Resize the text
+    }
+
+    // Set the flag to indicate end level objects are loaded
+    endLevelLoaded = true;
+}
+
+void BallScreen::startNextLevel() {
+    std::cout << "Starting next level." << std::endl;
+    // Load the next level
+    SceneManager::getInstance()->loadScene("MonkeyLevelScene");
 }

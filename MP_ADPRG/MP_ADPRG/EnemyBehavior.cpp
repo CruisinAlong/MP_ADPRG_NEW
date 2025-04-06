@@ -3,12 +3,9 @@
 #include "Game.h"
 #include <SFML/Graphics.hpp>
 
-EnemyBehavior::EnemyBehavior(std::string name) : AbstractComponent(name, Script), movementType(Static), delay(0.0f), ticks(0.0f) {
+EnemyBehavior::EnemyBehavior(std::string name) : AbstractComponent(name, Script), movementType(Static), delay(0.0f), ticks(0.0f), jumpDelay(0.0f), hasJumped(false) {
     this->reset();
 }
-
-
-
 
 void EnemyBehavior::perform() {
     if (owner == nullptr) {
@@ -49,8 +46,20 @@ void EnemyBehavior::perform() {
     case NonMoving:
         // Do nothing, the enemy will stop moving
         break;
+    case FastJump:
+        if (ticks >= delay) {
+            if (!hasJumped && ticks >= delay + jumpDelay) { 
+                transformable->move(-500.0f * deltaTime.asSeconds(), -300.0f * deltaTime.asSeconds()); // Fast speed and jump
+                hasJumped = true; // Jump once
+            }
+            else {
+                transformable->move(-500.0f * deltaTime.asSeconds(), 0); // Continue moving fast horizontally
+            }
+        }
+        break;
     }
 }
+
 
 void EnemyBehavior::configure(EnemyMovementType type, float delay) {
     this->movementType = type;

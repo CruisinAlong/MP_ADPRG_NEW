@@ -25,7 +25,7 @@ void TitleScreen::initialize() {
 
     playButton = new UIButton("PlayButton", btnNormal, btnPressed);
     this->attachChild(playButton);
-    playButton->setPosition(0, -50);
+    playButton->setPosition(0, 170);
     playButton->getTransformable()->setScale(0.3f, 0.3f);
     playButton->setButtonListener(this);
 
@@ -37,7 +37,7 @@ void TitleScreen::initialize() {
 
     quitButton = new UIButton("QuitButton", btnNormal, btnPressed);
     this->attachChild(quitButton);
-    quitButton->setPosition(0, 50);
+    quitButton->setPosition(0, 270);
     quitButton->getTransformable()->setScale(0.3f, 0.3f);
     quitButton->setButtonListener(this);
 
@@ -90,7 +90,7 @@ void TitleScreen::initialize() {
 void TitleScreen::onButtonClick(UIButton* button) {
     std::cout << button->getName() << " clicked" << std::endl;
     if (button->getName() == "PlayButton") {
-        SceneManager::getInstance()->loadScene("BallScene");
+        SceneManager::getInstance()->loadScene("GameScene");
         ApplicationManager::getInstance()->resumeApplication();
     }
     else if (button->getName() == "QuitButton") {
