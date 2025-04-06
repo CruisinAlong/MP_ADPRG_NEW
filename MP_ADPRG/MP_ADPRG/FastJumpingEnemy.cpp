@@ -9,7 +9,9 @@
 #include "MonkeyLevelScreen.h"
 
 FastJumpingEnemy::FastJumpingEnemy(std::string name) : AbstractPoolable(name), CollisionListener(), sprite(nullptr), collider(nullptr), hasJumped(false) {}
-
+/// <summary>
+/// Fast monkey enemy
+/// </summary>
 void FastJumpingEnemy::initialize() {
     this->sprite = new sf::Sprite();
     sprite->setTexture(*TextureManager::getInstance()->getTexture("monkey"));

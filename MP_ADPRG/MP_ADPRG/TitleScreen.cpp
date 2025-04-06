@@ -2,7 +2,9 @@
 #include "TitleScreen.h"
 
 TitleScreen::TitleScreen(std::string name) : AbstractGameObject(name), ButtonListener(), showConfirmationPopup(false) {}
-
+/// <summary>
+/// Main menu scene, first seen on play.
+/// </summary>
 void TitleScreen::initialize() {
     std::cout << "TitleScreen initialize called for: " << this->getName() << std::endl;
 

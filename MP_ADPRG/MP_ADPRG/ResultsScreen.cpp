@@ -4,7 +4,9 @@
 #include <iostream>
 
 ResultsScreen::ResultsScreen(std::string name) : AbstractGameObject(name) {}
-
+/// <summary>
+/// Shows the score of the player
+/// </summary>
 void ResultsScreen::initialize() {
     std::cout << "ResultsScreen initialized" << std::endl;
 

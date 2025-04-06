@@ -70,7 +70,10 @@ void BallScreen::onButtonReleased(UIButton* button) {
     // Handle button release events if needed
 }
 
-
+/// <summary>
+/// Determines the start of a new level after reaching a certain distance.
+/// </summary>
+/// <param name="deltaTime"></param>
 void BallScreen::update(sf::Time deltaTime) {
     AbstractGameObject::update(deltaTime);
 
@@ -89,7 +92,9 @@ void BallScreen::update(sf::Time deltaTime) {
         }
     }
 }
-
+/// <summary>
+/// Ends the level and shows the score.
+/// </summary>
 void BallScreen::endLevel() {
     std::cout << "Level ended." << std::endl;
 
@@ -107,7 +112,9 @@ void BallScreen::endLevel() {
     // Set the flag to indicate end level objects are loaded
     endLevelLoaded = true;
 }
-
+/// <summary>
+/// Loads the next scene.
+/// </summary>
 void BallScreen::startNextLevel() {
     std::cout << "Starting next level." << std::endl;
     // Load the next level

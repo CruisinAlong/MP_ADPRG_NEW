@@ -58,7 +58,10 @@ AbstractPoolable* EnemyGroundUnit::clone() {
 void EnemyGroundUnit::update(sf::Time deltaTime) {
     AbstractGameObject::update(deltaTime);
 }
-
+/// <summary>
+/// Deducts score on collision.
+/// </summary>
+/// <param name="contact"></param>
 void EnemyGroundUnit::onCollisionEnter(AbstractGameObject* contact) {
 	std::cout << "collisionProcessed: " << collisionProcessed << std::endl;
     if (!collisionProcessed && contact->getName().find("PlaneObject") != std::string::npos) {

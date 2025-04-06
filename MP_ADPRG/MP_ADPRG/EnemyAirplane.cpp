@@ -50,7 +50,10 @@ AbstractPoolable* EnemyAirplane::clone() {
 	AbstractPoolable* copyObj = new EnemyAirplane(this->name);
 	return copyObj;
 }
-
+/// <summary>
+/// Adds score on collision
+/// </summary>
+/// <param name="contact"></param>
 void EnemyAirplane::onCollisionEnter(AbstractGameObject* contact) {
 	if (!collisionProcessed && contact->getName().find("PlaneObject") != std::string::npos) {
 		std::cout << "EnemyAirplane collided with PlaneObject" << std::endl;

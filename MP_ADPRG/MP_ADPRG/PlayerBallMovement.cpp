@@ -5,7 +5,9 @@
 
 PlayerBallMovement::PlayerBallMovement(std::string name) 
     : PlayerMovement(name), isRidingBall(false), currentBall(nullptr), isJumping(false), jumpSpeed(300.0f), gravity(500.0f), velocityY(0.0f), playerHeight(30.0f) {}
-
+/// <summary>
+/// Movement for player when they are in the ball level.
+/// </summary>
 void PlayerBallMovement::perform() {
     BallPlayer* player = (BallPlayer*)this->getOwner();
     PlayerInputController* inputController = (PlayerInputController*)(player->getComponentsOfType(ComponentType::Input)[0]);

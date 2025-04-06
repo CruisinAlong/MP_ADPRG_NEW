@@ -4,7 +4,12 @@
 #include "ObjectPoolHolder.h"
 #include "FastJumpingEnemy.h"
 #include <iostream>
-
+/// <summary>
+/// Handles pool of fast jumping enemies.
+/// </summary>
+/// <param name="numEnemies"></param>
+/// <param name="name"></param>
+/// <param name="parent"></param>
 FastJumpingEnemySwarmHandler::FastJumpingEnemySwarmHandler(int numEnemies, std::string name, AbstractGameObject* parent) : AbstractComponent(name, Script), distribution(1.0f, 5.0f) {
     this->enemyPool = new GameObjectPool(
         ObjectPoolHolder::MONKEY_POOL_TAG,

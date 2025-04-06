@@ -5,6 +5,12 @@
 #include "BallObject.h"
 #include <iostream>
 
+/// <summary>
+/// Constructor for BallObjectHandler
+/// </summary>
+/// <param name="numBalls">The number of balls to manage</param>
+/// <param name="name">The name of the handler</param>
+/// <param name="parent">The parent game object</param>
 BallObjectHandler::BallObjectHandler(int numBalls, std::string name, AbstractGameObject* parent)
     : AbstractComponent(name, Script), distribution(1.0f, 5.0f) { 
     this->ballPool = new GameObjectPool(
@@ -20,12 +26,16 @@ BallObjectHandler::BallObjectHandler(int numBalls, std::string name, AbstractGam
     // Initialize the next spawn time
     nextSpawnTime = distribution(generator);
 }
-
+/// <summary>
+/// Destructor for BallObjectHandler
+/// </summary>
 BallObjectHandler::~BallObjectHandler() {
     delete this->ballPool;
     std::cout << "BallObjectHandler [" << name << "] destroyed." << std::endl;
 }
-
+/// <summary>
+/// Handles the spawning and releasing of ball objects
+/// </summary>
 void BallObjectHandler::perform() {
     GameObjectPool* ballPool = ObjectPoolHolder::getInstance()->getPool(ObjectPoolHolder::BALL_POOL_TAG);
     this->ticks += this->deltaTime.asSeconds();

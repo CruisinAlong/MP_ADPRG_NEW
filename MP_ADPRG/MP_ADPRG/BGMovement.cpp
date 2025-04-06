@@ -5,7 +5,9 @@
 
 BGMovement::BGMovement(std::string name) : AbstractComponent(name, Script), LEVEL_END_DISTANCE(Game::WINDOW_WIDTH * 9) {    
 }
-
+/// <summary>
+/// Moves background and measures distance traveled to end the level.
+/// </summary>
 void BGMovement::perform() {
     BGObject* bgObject = (BGObject*)this->getOwner();
     sf::Transformable* bgTransformable = bgObject->getTransformable();
@@ -40,7 +42,10 @@ void BGMovement::perform() {
 void BGMovement::setInputController(BGInputController* inputController) {
     this->inputController = inputController;
 }
-
+/// <summary>
+/// Bool determining if the level is finished.
+/// </summary>
+/// <returns></returns>
 bool BGMovement::isLevelFinished(){
     if (levelFinished) {
         // Reset distance traveled when the level is finished

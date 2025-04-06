@@ -6,7 +6,9 @@
 EnemyBehavior::EnemyBehavior(std::string name) : AbstractComponent(name, Script), movementType(Static), delay(0.0f), ticks(0.0f), jumpDelay(0.0f), hasJumped(false) {
     this->reset();
 }
-
+/// <summary>
+/// Determines enemy movement, one is "static" where it moves along with the background, one moves them slowly forward and the last is a speedy advance.
+/// </summary>
 void EnemyBehavior::perform() {
     if (owner == nullptr) {
         std::cerr << "EnemyBehavior [" << name << "] error: owner not set." << std::endl;

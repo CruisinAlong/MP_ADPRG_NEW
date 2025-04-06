@@ -57,6 +57,10 @@ void BallPlayer::processInputs(sf::Event event) {
     AbstractGameObject::processInputs(event);
 }
 
+/// <summary>
+/// Determines whether or not the player hit the ground.
+/// </summary>
+/// <param name="deltaTime"></param>
 void BallPlayer::update(sf::Time deltaTime) {
     AbstractGameObject::update(deltaTime);
     // Check if the player has reached the ground level
@@ -75,6 +79,10 @@ void BallPlayer::update(sf::Time deltaTime) {
     }
 
 }
+/// <summary>
+/// Sets the player height above a ball object when the player collides with the top of it. 
+/// </summary>
+/// <param name="contact"></param>
 
 void BallPlayer::onCollisionEnter(AbstractGameObject* contact) {
     if (contact->getName().find("ball") != std::string::npos) {
@@ -87,7 +95,10 @@ void BallPlayer::onCollisionEnter(AbstractGameObject* contact) {
 
     }
 }
-
+/// <summary>
+/// Sets the player height to fall back down to the ground, sets a flag to see if the player exited the collision to see if they just came from a ball.
+/// </summary>
+/// <param name="gameObject"></param>
 void BallPlayer::onCollisionExit(AbstractGameObject* gameObject) {
 	std::cout << "PlayerObject exited collision with: " << gameObject->getName() << std::endl;
     PlayerBallMovement* movement = dynamic_cast<PlayerBallMovement*>(this->findComponentByName("MyBallMovement"));

@@ -4,7 +4,9 @@
 EnemyInputController::EnemyInputController(std::string name) : GenericInputController(name), move(false) {
     std::cout << "EnemyInputController [" << name << "] created." << std::endl; // Debug log
 }
-
+/// <summary>
+/// Makes sure enemies move along with background.
+/// </summary>
 void EnemyInputController::perform() {
     bool keyFlag = false;
     if (event.type == sf::Event::KeyPressed) {

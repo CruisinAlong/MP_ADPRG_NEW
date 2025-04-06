@@ -6,7 +6,10 @@ SoundManager* SoundManager::sharedInstance = nullptr;
 SoundManager::SoundManager() {
     std::cout << "SoundManager constructor called" << std::endl;
 }
-
+/// <summary>
+/// Handles BGM for game
+/// </summary>
+/// <returns></returns>
 SoundManager* SoundManager::getInstance() {
     if (sharedInstance == nullptr) {
         sharedInstance = new SoundManager();

@@ -3,7 +3,12 @@
 #include "ObjectPoolHolder.h"
 #include "EnemyAirplane.h"
 #include <iostream>
-
+/// <summary>
+/// These are the hoops.
+/// </summary>
+/// <param name="numEnemies"></param>
+/// <param name="name"></param>
+/// <param name="parent"></param>
 EnemySwarmHandler::EnemySwarmHandler(int numEnemies, std::string name, AbstractGameObject* parent) : AbstractComponent(name, Script), distribution(2.0f, 5.0f) {
     this->enemyPool = new GameObjectPool(
         ObjectPoolHolder::ENEMY_POOL_TAG,

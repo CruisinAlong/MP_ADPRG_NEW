@@ -8,7 +8,9 @@
 #include "MonkeyLevelScene.h"
 
 SlowForwardEnemy::SlowForwardEnemy(std::string name) : AbstractPoolable(name), CollisionListener(), sprite(nullptr), collider(nullptr) {}
-
+/// <summary>
+/// Slow moving enemy in third level
+/// </summary>
 void SlowForwardEnemy::initialize() {
     this->sprite = new sf::Sprite();
     sprite->setTexture(*TextureManager::getInstance()->getTexture("monkey"));

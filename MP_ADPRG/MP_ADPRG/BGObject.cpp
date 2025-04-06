@@ -5,7 +5,9 @@
 
 BGObject::BGObject(std::string name) : AbstractGameObject(name) {
 }
-
+/// <summary>
+/// Repeats the background texture to lengthen level and positions each sprite.
+/// </summary>
 void BGObject::initialize() {
     std::cout << "BGObject initialized" << std::endl;
     // Load the texture
@@ -13,7 +15,7 @@ void BGObject::initialize() {
     sf::Vector2u textureSize = texture->getSize();
 
     // Calculate the number of sprites needed to cover the window width
-    int numSprites = (Game::WINDOW_WIDTH / textureSize.x) + 9;
+    int numSprites = (Game::WINDOW_WIDTH / textureSize.x) + 10;
 
     // Create and position the sprites
     for (int i = 0; i < numSprites; ++i) {

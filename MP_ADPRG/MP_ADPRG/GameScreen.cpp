@@ -9,7 +9,9 @@
 #include <string>
 
 GameScreen::GameScreen(std::string name) : AbstractGameObject(name), ButtonListener(), showConfirmationPopup(false), endLevelLoaded(false) {}
-
+/// <summary>
+/// First level
+/// </summary>
 void GameScreen::initialize() {
     std::cout << "GameScreen initialize called for: " << this->getName() << std::endl;
 

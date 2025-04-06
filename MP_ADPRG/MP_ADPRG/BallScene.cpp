@@ -24,7 +24,9 @@ void BallScene::onUnloadResources() {
     std::cout << "BallScene unloading resources." << std::endl;
     // Unload resources here if needed
 }
-
+/// <summary>
+/// Stops music and detaches the PhysicsManager from the current scene.
+/// </summary>
 void BallScene::onUnloadObjects() {
     std::cout << "BallScene unloading objects." << std::endl;
     SoundManager::getInstance()->stopMusic(); 

@@ -3,7 +3,12 @@
 #include "ObjectPoolHolder.h"
 #include "EnemyGroundUnit.h"
 #include <iostream>
-
+/// <summary>
+/// Makes ground enemies
+/// </summary>
+/// <param name="numEnemies"></param>
+/// <param name="name"></param>
+/// <param name="parent"></param>
 EnemyGroundSwarmHandler::EnemyGroundSwarmHandler(int numEnemies, std::string name, AbstractGameObject* parent) : AbstractComponent(name, Script), distribution(1.0f, 5.0f) {
     this->enemyPool = new GameObjectPool(
         ObjectPoolHolder::GROUND_POOL_TAG,
